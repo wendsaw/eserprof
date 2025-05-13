@@ -77,3 +77,42 @@ footer {
   margin: 0 1rem;
   text-decoration: none;
 }
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  height: 40px;
+}
+
+.marquee-text {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  animation: slideRightFade 20s linear infinite;
+  color: red;
+  font-weight: bold;
+}
+
+@keyframes slideRightFade {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}

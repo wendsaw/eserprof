@@ -28,10 +28,22 @@ function App() {
           </ul>
         </nav>
       </header>
-      <div>
-        <p  style={{color:"red"}}> L'excellence au service du BTP <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer" style={{marginLeft:"1000px", textDecoration:"none"}}>Contacter sur WhatsApp:+226 12 34 56 78 </a></p>
-          
-        </div>
+      <div className="marquee-container">
+  <p className="marquee-text">
+    ESER-PROF Sarl — l'excellence au service du BTP — 
+    <a
+      href="https://wa.me/22612345678"
+      target="_blank"
+      rel="noreferrer"
+      style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
+    >
+      Contacter sur WhatsApp: +226 12 34 56 78
+    </a>
+  </p>
+</div>
+
+
+
     
       {/* Contenu principal avec routage */}
       <Routes>
