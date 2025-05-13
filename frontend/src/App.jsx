@@ -11,12 +11,13 @@ import './styles.css';
 function App() {
   return (
     <Router>
+      {/* En-tête du site */}
       <header>
         <div className="logo">
           <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
-          <h1>ESER-PROF</h1>
-          <p>Peinture Routière</p>
+          
         </div>
+
         <nav>
           <ul>
             <li><Link to="/">Accueil</Link></li>
@@ -27,7 +28,12 @@ function App() {
           </ul>
         </nav>
       </header>
-
+      <div>
+        <p  style={{color:"red"}}> L'excellence au service du BTP <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer" style={{marginLeft:"1000px", textDecoration:"none"}}>Contacter sur WhatsApp:+226 12 34 56 78 </a></p>
+          
+        </div>
+    
+      {/* Contenu principal avec routage */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -36,6 +42,7 @@ function App() {
         <Route path="/client" element={<Client />} />
       </Routes>
 
+      {/* Pied de page */}
       <footer>
         <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
         <div className="social">
