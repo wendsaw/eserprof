@@ -14,7 +14,7 @@ function Home() {
       paddingLeft: '20rem',
       margin: '1rem 0',
       textAlign: 'left',
-      color:"grey",
+      color:"black",
       fontSize:"1em"
     }}>
       <li>Marquage et entretien de la signalisation au sol</li>
@@ -34,11 +34,11 @@ function Home() {
 
       {/* Image bannière */}
       <img
-        src="./images/homeImage.png"
+        src="./images/homeImage2.png"
         alt="Illustration signalisation"
         style={{
           width: '100vw',
-          height: '500px',
+          height: '400px',
           objectFit: 'cover',
           display: 'block',
           marginLeft: 'calc(-50vw + 50%)'
@@ -51,41 +51,54 @@ function Home() {
         <div className="services-list">
           <article>
             <img src="./images/signalisation.png" alt="Panneau de signalisation" style={{ width: 80, height: 80 }} />
-            <h3>Signalisation Routière</h3>
-            <p>Installation de panneaux de signalisation</p>
+            <h3>Marquage au sol et entretien de la signalisation horizontale</h3>
+            <p>Lignes de chaussée, passages piétons, flèches directionnelles…</p>
           </article>
           <article>
-            <img src="./images/marquage.png" alt="Marquage au sol" style={{ width: 80, height: 80 }} />
-            <h3>Marquage de Chaussée</h3>
-            <p>Peinture de lignes sur les routes</p>
+            <img src="./images/signalisation.png" alt="Marquage au sol" style={{ width: 80, height: 80 }} />
+            <h3>Traçage de parkings et marquages de stationnement</h3>
+            <p>Zones PMR, numérotation, flèches, hachures…</p>
           </article>
           <article>
             <img src="./images/signalisation.png" alt="Marquage de parking" style={{ width: 80, height: 80 }} />
-            <h3>Marquage de Parking</h3>
-            <p>Tracé de lignes de stationnement</p>
+            <h3>Fourniture et pose de panneaux de signalisation routière</h3>
+            <p>Signalisation verticale conforme à la réglementation</p>
           </article>
+          <article>
+            <img src="./images/signalisation.png" alt="Panneau de signalisation" style={{ width: 80, height: 80 }} />
+            <h3>Installation de glissières de sécurité et garde-corps</h3>
+            <p>Dispositifs de retenue et de protection en bordure de voirie</p>
+          </article>
+          
         </div>
       </section>
 
-      {/* Section Réalisations */}
       <section className="realisations">
-        <h2>Nos Réalisations</h2>
-        <div className="gallery">
-          <img src="/images/project1.jpg" alt="Route réalisée" />
-          <img src="/images/project2.jpg" alt="Passage piéton peint" />
-          <img src="/images/project3.jpg" alt="Signal STOP marqué" />
-        </div>
-      </section>
+  <h2>Nos Réalisations</h2>
+  <div className="gallery">
+    <div className="realisation-block">
+      <h3>Poste de péage moderne</h3>
+      <img src="/realisations/peagesModerne/image1.jpg" alt="Péage moderne" />
+    </div>
 
-      {/* Zones d'intervention */}
-      <section className="zones">
-        <h2>Zones d’Intervention</h2>
-        <img src="/images/carte-burkina-yellow.png" alt="Carte des interventions ESER-PROF" />
-      </section>
+    <div className="realisation-block">
+      <h3>Aéroport de Ouagadougou</h3>
+      <img src="/realisations/aeroport/image1.jpg" alt="Aéroport" />
+    </div>
+
+    <div className="realisation-block">
+      <h3>Projet Gourcy</h3>
+      <img src="/realisations/gourcy/image6.jpg" alt="Gourcy" />
+    </div>
+  </div>
+</section>
+
+
+      
 
       {/* Témoignages */}
       <section className="testimonials">
-        <h2>Témoignages</h2>
+        <h2>Nos Partenaires</h2>
         <div className="cards">
           <div className="card">
             <p>“Un service fiable et professionnel pour nos routes rurales.”</p>
