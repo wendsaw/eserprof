@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import '../styles.css';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
 import Realisations from '../pages/Realisations';
@@ -15,6 +16,7 @@ function Layout() {
 
   // Define paths where the images should be hidden
   const hideHeaderImages = [
+    '/services',
     '/marquageSol',
     '/tracage',
     '/signalisation',
@@ -44,10 +46,10 @@ function Layout() {
         {/* Bottom image strip — shown only when not on detail page */}
         {!hideHeaderImages && (
           <div className="header-images">
-            <img src="/images/marquage.png" alt="Marquage" />
-            <img src="/images/tracage.png" alt="Traçage" />
-            <img src="/images/signalisation1.png" alt="Signalisation" />
-            <img src="/images/glissiere.png" alt="Glissière" />
+            <Link to="/marquageSol"><img src="/images/marquage.png" alt="Marquage" /></Link>
+            <Link to="/tracage"><img src="/images/tracage.png" alt="Traçage" /></Link>
+            <Link to="/signalisation"><img src="/images/signalisation1.png" alt="Signalisation" /></Link> 
+           <Link to="/glissiere"><img src="/images/glissiere.png" alt="Glissière" /></Link> 
           </div>
         )}
       </header>

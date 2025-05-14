@@ -1,5 +1,6 @@
 import React from 'react';
 import '../HomePage.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -17,10 +18,11 @@ function Home() {
             // color: "black",
             fontSize: "1em"
           }}>
-            <li>Marquage et entretien de la signalisation au sol</li>
-            <li>Traçage de parking</li>
-            <li>Fourniture et pose de panneaux de signalisation</li>
-            <li>Fourniture et pose de glissière et garde-corps de sécurité</li>
+            <Link to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
+            <Link to="/tracage"><li>Traçage de parking</li></Link>
+            <Link to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link> 
+           <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link> 
+            
           </ul>
 
           <div style={{ textAlign: 'center' }}>
@@ -50,24 +52,32 @@ function Home() {
         <h2>Nos Services</h2>
         <div className="services-list">
           <article>
-            <img src="./images/marquage.png" alt="Panneau de signalisation" style={{ width: 100, height: 100 }} />
-            <h3>Marquage au sol et entretien de la signalisation horizontale</h3>
-            <p>Lignes de chaussée, passages piétons, flèches directionnelles…</p>
+            <Link to="/marquageSol" className="service-link">
+              <img src="./images/marquage.png" alt="Marquage au sol" />
+              <h3>Marquage au sol et entretien de la signalisation horizontale</h3>
+              <p>Lignes de chaussée, passages piétons, flèches directionnelles…</p>
+            </Link>
           </article>
           <article>
-            <img src="./images/tracage.png" alt="Marquage au sol" style={{ width: 100, height: 100 }} />
-            <h3>Traçage de parkings et marquages de stationnement</h3>
-            <p>Zones PMR, numérotation, flèches, hachures…</p>
+            <Link to="/tracage" className="service-link">
+              <img src="./images/tracage.png" alt="Traçage de parkings" />
+              <h3>Traçage de parkings et marquages de stationnement</h3>
+              <p>Zones PMR, numérotation, flèches, hachures…</p>
+            </Link>
           </article>
           <article>
-            <img src="./images/signalisation1.png" alt="Marquage de parking" style={{ width: 100, height: 100 }} />
-            <h3>Fourniture et pose de panneaux de signalisation routière</h3>
-            <p>Signalisation verticale conforme à la réglementation</p>
+            <Link to="/signalisation" className="service-link">
+              <img src="./images/signalisation1.png" alt="Panneaux de signalisation" />
+              <h3>Fourniture et pose de panneaux de signalisation routière</h3>
+              <p>Signalisation verticale conforme à la réglementation</p>
+            </Link>
           </article>
           <article>
-            <img src="./images/glissiere.png" alt="Panneau de signalisation" style={{ width: 100, height: 100 }} />
-            <h3>Installation de glissières de sécurité et garde-corps</h3>
-            <p>Dispositifs de retenue et de protection en bordure de voirie</p>
+            <Link to="/glissiere" className="service-link">
+              <img src="./images/glissiere.png" alt="Glissières de sécurité" />
+              <h3>Installation de glissières de sécurité et garde-corps</h3>
+              <p>Dispositifs de retenue et de protection en bordure de voirie</p>
+            </Link>
           </article>
 
         </div>
@@ -113,7 +123,7 @@ function Home() {
             </div>
           </div>
 
-         <div className="card">
+          <div className="card">
             <div className="card-inner">
               <div className="card-front">
                 <p>“Présidence du Faso”</p>
@@ -138,17 +148,17 @@ function Home() {
             </div>
           </div>
           <div className="card">
-  <div className="card-inner">
-    <div className="card-front">
-      <p>“Ministère des infrastructures de Transport”</p>
-      <span>Partenaire institutionnel</span>
-    </div>
-    <div className="card-back">
-      <p>“Banque Atlantique”</p>
-      <span>Partenaire Financier</span>
-    </div>
-  </div>
-</div>
+            <div className="card-inner">
+              <div className="card-front">
+                <p>“Ministère des infrastructures de Transport”</p>
+                <span>Partenaire institutionnel</span>
+              </div>
+              <div className="card-back">
+                <p>“Banque Atlantique”</p>
+                <span>Partenaire Financier</span>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>

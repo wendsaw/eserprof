@@ -40,7 +40,9 @@ function Signalisation() {
         </ul>
 
         <div className="cta-contact">
-          <h4>Demandez votre devis gratuit</h4>
+          <div style={{ textAlign: 'center' }}>
+            <a href="#contact" className="btn-primary">Demander un devis</a>
+          </div>
           <p>
             📞 Téléphone : <strong>+226 12 34 56 78</strong><br />
             💬 <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a><br />
