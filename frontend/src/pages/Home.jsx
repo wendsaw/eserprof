@@ -104,11 +104,11 @@ function Home() {
             <div className="card-inner">
               <div className="card-front">
                 <p>“Globex Construction”</p>
-                <span>Leader dans le BTP au Burkina</span>
+                <span>Partenaire Technique</span>
               </div>
               <div className="card-back">
                 <p>“SOROUBAT”</p>
-                <span>Entreprise de BTP</span>
+                <span>Partenaire Technique</span>
               </div>
             </div>
           </div>
@@ -116,36 +116,36 @@ function Home() {
          <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“Globex Construction”</p>
-                <span>Leader dans le BTP au Burkina</span>
+                <p>“Présidence du Faso”</p>
+                <span>Partenaire Technique</span>
               </div>
               <div className="card-back">
-                <p>“SOROUBAT”</p>
-                <span>Entreprise de BTP</span>
+                <p>“CMC Italie”</p>
+                <span>Partenaire Technique</span>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“Globex Construction”</p>
-                <span>Leader dans le BTP au Burkina</span>
+                <p>“CODEC”</p>
+                <span>Partenaire Financier</span>
               </div>
               <div className="card-back">
-                <p>“SOROUBAT”</p>
-                <span>Entreprise de BTP</span>
+                <p>“Coris Banque”</p>
+                <span>Partenaire Financier</span>
               </div>
             </div>
           </div>
           <div className="card">
   <div className="card-inner">
     <div className="card-front">
-      <p>“CMC Italie.”</p>
-      <span>Partenaire d'achat d'équipements</span>
+      <p>“Ministère des infrastructures de Transport”</p>
+      <span>Partenaire institutionnel</span>
     </div>
     <div className="card-back">
-      <p>“Ministère des Infrastructures”</p>
-      <span>Partenaire institutionnel</span>
+      <p>“Banque Atlantique”</p>
+      <span>Partenaire Financier</span>
     </div>
   </div>
 </div>

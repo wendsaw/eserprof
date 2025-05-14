@@ -1,11 +1,16 @@
 // App.jsx - Point d'entrée React pour ESER-PROF
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Realisations from './pages/Realisations';
 import Contact from './pages/Contact';
 import Client from './pages/Client';
+import MarquageSol from './components/MarquageSol';
+import Tracage from './components/Tracage';
+import Signalisation from './components/Signalisation';
+import Glissiere from './components/Glissiere';
+
 import './styles.css';
 
 function App() {
@@ -64,6 +69,10 @@ function App() {
         <Route path="/realisations" element={<Realisations />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/client" element={<Client />} />
+        <Route path="/marquageSol" element={<MarquageSol/>} />
+        <Route path="/tracage" element={<Tracage/>} />
+        <Route path="/signalisation" element={<Signalisation />} />
+        <Route path="/glissiere" element={<Glissiere />} />
       </Routes>
 
       {/* Pied de page */}
