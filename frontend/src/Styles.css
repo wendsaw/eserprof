@@ -10,46 +10,29 @@ body {
 
 /* === HEADER === */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: skyblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Top section: logo and nav */
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: skyblue;
-  color: black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optionnel : petit effet d’ombre */
 }
 
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.logo img {
+  width: 180px;
 }
 
-header .logo img {
-  width: 150px;
-  vertical-align: middle;
-}
-
-header .logo {
-  margin: 0;
-  font-size: 1em;
-  color: #222;
-}
-
+/* Navigation */
 nav ul {
-  list-style: none;
   display: flex;
   gap: 1.5rem;
+  list-style: none;
   margin: 0;
   padding: 0;
-}
-
-nav li {
-  list-style: none;
 }
 
 nav a {
@@ -57,12 +40,29 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #f9c900;
 }
+
+/* Bottom section: full-width image banner */
+.header-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+}
+
+.header-images img {
+  flex: 1;
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  padding: 0 0.5rem;
+}
+
 
 /* === PIED DE PAGE === */
 footer {
@@ -115,4 +115,22 @@ footer {
     left: 100%;
     opacity: 0;
   }
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.header-icons img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
 }

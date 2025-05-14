@@ -13,21 +13,33 @@ function App() {
     <Router>
       {/* En-tête du site */}
       <header>
-        <div className="logo">
-          <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
-          
-        </div>
+  {/* Top section: logo + nav */}
+  <div className="header-top">
+    <div className="logo">
+      <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
+    </div>
 
-        <nav>
-          <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/realisations">Réalisations</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/client">Espace Client</Link></li>
-          </ul>
-        </nav>
-      </header>
+    <nav>
+      <ul>
+        <li><Link to="/">Accueil</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/realisations">Réalisations</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/client">Espace Client</Link></li>
+      </ul>
+    </nav>
+  </div>
+
+  {/* Bottom section: full-width image strip */}
+  <div className="header-images">
+    <img src="/images/marquage.png" alt="Marquage" />
+    <img src="/images/tracage.png" alt="Traçage" />
+    <img src="/images/signalisation1.png" alt="Signalisation" />
+    <img src="/images/glissiere.png" alt="Glissière" />
+  </div>
+</header>
+
+
       <div className="marquee-container">
   <p className="marquee-text">
     ESER-PROF Sarl — l'excellence au service du BTP — 
