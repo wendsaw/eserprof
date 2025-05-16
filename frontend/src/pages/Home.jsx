@@ -166,7 +166,7 @@ function Home() {
       </section>
 
       {/* Section Contact */}
-      <section className="zones">
+      <section >
         <h2>Contactez-Nous</h2>
         <form>
           <input type="text" placeholder="Nom" required />
