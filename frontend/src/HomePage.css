@@ -2,22 +2,29 @@
 .hero {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: #2b2b2b; /* asphalt-like */
-  color: #f9c900; /* road paint yellow */
-
-  /* background-color: #f9c900; 
-color: #1f1f1f; */
+  background-color: #2b2b2b;
+  color: #f9c900;
 }
+
+.hero ul {
+  list-style: disc;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .hero ul a {
   text-decoration: none;
   color: inherit;
 }
 
 .hero ul a:hover {
-  text-decoration: underline; /* optional: visual feedback */
-  color: #f9c900; /* optional hover color */
+  text-decoration: underline;
+  color: #f9c900;
 }
-
 
 .hero h1,
 .hero h2 {
@@ -71,7 +78,8 @@ color: #1f1f1f; */
 }
 
 .services-list article {
-  flex: 1 1 200px;
+  flex: 1 1 250px;
+  max-width: 320px;
   text-align: center;
   border: 1px solid #ddd;
   padding: 1rem;
@@ -79,11 +87,11 @@ color: #1f1f1f; */
   background-color: #fff;
 }
 
-.services-list img,
-.service-items img {
-  width: 80px;
-  height: 80px;
+.services-list img {
+  width: 70px;
+  height: 70px;
   margin-bottom: 10px;
+  object-fit: contain;
 }
 
 /* === RÉALISATIONS === */
@@ -104,7 +112,7 @@ color: #1f1f1f; */
   width: 300px;
   height: 300px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc
 }
 
 /* === ZONES === */
@@ -117,6 +125,7 @@ color: #1f1f1f; */
 .zones img {
   width: 200px;
   margin-top: 20px;
+  max-width: 90%;
 }
 
 /* === PARTENAIRES === */
@@ -176,7 +185,7 @@ color: #1f1f1f; */
 }
 
 .card-front {
-  background: linear-gradient(135deg, #f9c900, #fff); /* paint road feel */
+  background: linear-gradient(135deg, #f9c900, #fff);
   border: 2px solid #1f1f1f;
 }
 
@@ -200,9 +209,6 @@ color: #1f1f1f; */
   font-weight: 500;
 }
 
-
-
-
 /* === FORMULAIRE DE CONTACT === */
 form {
   display: flex;
@@ -210,6 +216,7 @@ form {
   gap: 1rem;
   max-width: 500px;
   margin: auto;
+  padding: 1rem;
 }
 
 form input,
@@ -218,6 +225,8 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 form button {
@@ -235,11 +244,20 @@ form button {
   margin-top: 2rem;
 }
 
-/* === SECTIONS GÉNÉRALES === */
+/* === SECTIONS === */
 section {
   padding: 2rem;
 }
-/* === RESPONSIVE MEDIA QUERIES === */
+
+/* === BANNER IMAGE RESPONSIVENESS === */
+img[alt="Illustration signalisation"] {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* === MEDIA QUERIES === */
 @media (max-width: 768px) {
   .hero h1,
   .hero h2 {
@@ -266,6 +284,11 @@ section {
   .zones img {
     width: 60%;
   }
+
+  .btn,
+  .btn-primary {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -278,7 +301,8 @@ section {
     font-size: 0.95rem;
   }
 
-  .btn {
+  .btn,
+  .btn-primary {
     width: 100%;
     padding: 0.75rem 1rem;
   }
@@ -289,5 +313,10 @@ section {
 
   form {
     padding: 0.5rem;
+  }
+
+  .services-list article h3,
+  .services-list article p {
+    font-size: 0.95rem;
   }
 }
