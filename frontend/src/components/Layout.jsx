@@ -4,11 +4,14 @@ import Home from '../pages/Home';
 import Services from '../pages/Services';
 import Realisations from '../pages/Realisations';
 import Contact from '../pages/Contact';
-import Client from '../pages/Client';
+import Presentation from '../pages/Presentation';
 import MarquageSol from './MarquageSol';
 import Tracage from './Tracage';
 import Signalisation from './Signalisation';
 import Glissiere from './Glissiere';
+import PeageModerne from './PeageModerne';
+import Aeroport from './Aeroport';
+import Gourcy from './Gourcy'
 
 
 function Layout() {
@@ -37,8 +40,9 @@ function Layout() {
               <li><Link to="/">Accueil</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/realisations">Réalisations</Link></li>
+               <li><Link to="/presentation">Presentation</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/client">Espace Client</Link></li>
+             
             </ul>
           </nav>
         </div>
@@ -73,11 +77,15 @@ function Layout() {
         <Route path="/services" element={<Services />} />
         <Route path="/realisations" element={<Realisations />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/client" element={<Client />} />
+        <Route path="/presentation" element={<Presentation />} />
         <Route path="/marquageSol" element={<MarquageSol />} />
         <Route path="/tracage" element={<Tracage />} />
         <Route path="/signalisation" element={<Signalisation />} />
         <Route path="/glissiere" element={<Glissiere />} />
+        <Route path="/peageModerne" element={<PeageModerne />} />
+        <Route path="/aeroport" element={<Aeroport />} />
+        <Route path="/gourcy" element={<Gourcy />} />
+        
       </Routes>
 
       <footer>

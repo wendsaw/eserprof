@@ -1,26 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
     <main className="page">
-      <h2>Nos Services</h2>
-      <div className="services-list">
-        <article>
-          <img src="/icons/road-sign.png" alt="Signalisation" />
-          <h3>Signalisation Routière</h3>
-          <p>Installation de panneaux de signalisation</p>
-        </article>
-        <article>
-          <img src="/icons/road-paint.png" alt="Marquage de Chaussée" />
-          <h3>Marquage de Chaussée</h3>
-          <p>Peinture de lignes sur les routes</p>
-        </article>
-        <article>
-          <img src="/icons/parking.png" alt="Parking" />
-          <h3>Marquage de Parking</h3>
-          <p>Tracé de lignes de stationnement</p>
-        </article>
-      </div>
+       <section className="realisations">
+              <h2>Nos Réalisations</h2>
+              <div className="gallery">
+                <div className="realisation-block">
+                  <Link to="/peageModerne"><h3>Poste de péage moderne</h3>
+                  <img src="/realisations/peagesModerne/image1.jpg" alt="Péage moderne" /></Link>
+                </div>
+      
+                <div className="realisation-block">
+                  <Link to="/aeroport"><h3>Aéroport de Ouagadougou</h3>
+                  <img src="/realisations/aeroport/image1.jpg" alt="Aéroport" /></Link>
+                </div>
+      
+                <div className="realisation-block">
+                  <Link to="/gourcy"><h3>Projet Gourcy</h3>
+                  <img src="/realisations/gourcy/image6.jpg" alt="Gourcy" /></Link>
+                </div>
+              </div>
+            </section>
     </main>
   );
 }

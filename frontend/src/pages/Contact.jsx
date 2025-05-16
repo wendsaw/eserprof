@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
   return (
     <main className="page">
-      <h2>Contactez-Nous</h2>
+      <h2 style={{textAlign:"center"}}>Contactez-Nous</h2>
       <form className="contact-form">
         <input type="text" placeholder="Nom" required />
         <input type="email" placeholder="E-mail" required />

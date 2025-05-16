@@ -40,7 +40,7 @@ function Glissiere() {
 
         <div className="cta-contact">
           <div style={{ textAlign: 'center' }}>
-            <a href="#contact" className="btn-primary">Demander un devis</a>
+            <a href="contact" className="btn-primary">Demander un devis</a>
           </div>
           <p>
             📞 Téléphone : <strong>+226 12 34 56 78</strong><br />
