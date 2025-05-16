@@ -354,3 +354,7 @@ img[alt="Illustration signalisation"] {
   padding: 0 1rem;
 }
 
+hero .btn-primary {
+  display: block;
+  margin: 1rem auto 0;
+}
