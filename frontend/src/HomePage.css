@@ -343,3 +343,14 @@ img[alt="Illustration signalisation"] {
     padding-left: 12rem;
   }
 }
+@media (max-width: 768px) {
+  .hero ul {
+    padding-left: 1.5rem !important;
+  }
+}
+.hero > div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
