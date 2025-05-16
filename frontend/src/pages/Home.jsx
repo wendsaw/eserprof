@@ -18,11 +18,13 @@ function Home() {
             // color: "black",
             fontSize: "1em"
           }}>
-            <Link to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
-            <Link to="/tracage"><li>Traçage de parking</li></Link>
-            <Link to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link> 
-           <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link> 
-            
+            <ul className="hero-list">
+  <Link to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
+  <Link to="/tracage"><li>Traçage de parking</li></Link>
+  <Link to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link> 
+  <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link> 
+</ul>
+
           </ul>
 
           <div style={{ textAlign: 'center' }}>

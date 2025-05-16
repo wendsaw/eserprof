@@ -320,3 +320,26 @@ img[alt="Illustration signalisation"] {
     font-size: 0.95rem;
   }
 }
+.hero-list {
+  list-style: disc;
+  padding-left: 5vw;
+  margin: 1rem 0;
+  text-align: left;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Responsive adjustment */
+@media (min-width: 768px) {
+  .hero-list {
+    padding-left: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-list {
+    padding-left: 12rem;
+  }
+}
