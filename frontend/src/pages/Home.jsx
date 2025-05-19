@@ -10,14 +10,7 @@ function Home() {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2>Société de Peinture Routière au Burkina</h2>
 
-          <ul style={{
-            listStyle: 'disc',
-            paddingLeft: '20rem',
-            margin: '1rem 0',
-            textAlign: 'left',
-            // color: "black",
-            fontSize: "1em"
-          }}>
+          
             <ul className="hero-list">
   <Link to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
   <Link to="/tracage"><li>Traçage de parking</li></Link>
@@ -25,7 +18,8 @@ function Home() {
   <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link> 
 </ul>
 
-          </ul>
+
+          
 
           <div style={{ textAlign: 'center' }}>
             <Link to="/demandedevis" className="btn-primary">Demander un devis</Link>
