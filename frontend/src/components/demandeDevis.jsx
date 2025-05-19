@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './devis.css'; // ← Import du fichier CSS
-
+import axios from 'axios';
+import './devis.css';
 
 const DemandeDevis = () => {
-
   const [formData, setFormData] = useState({
     nom: '',
     email: '',
@@ -12,24 +11,31 @@ const DemandeDevis = () => {
     message: '',
   });
 
+  const [status, setStatus] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus('Envoi en cours...');
 
-    const phoneNumber = '+17203946223'; 
-    const text = `📩 *Demande de devis ESER-PROF* \n
-👤 *Nom* : ${formData.nom}
-📧 *Email* : ${formData.email}
-📞 *Téléphone* : ${formData.telephone}
-🛠️ *Service demandé* : ${formData.service}
-📝 *Détails* : ${formData.message}`;
-
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank');
+    try {
+      await axios.post('http://localhost:5000/api/contact', formData); // ← Modifier URL en prod
+      setStatus('✅ Votre demande a été envoyée avec succès.');
+      setFormData({
+        nom: '',
+        email: '',
+        telephone: '',
+        service: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Erreur d’envoi', error);
+      setStatus('❌ Une erreur est survenue. Veuillez réessayer.');
+    }
   };
 
   return (
@@ -63,7 +69,7 @@ const DemandeDevis = () => {
         <input
           type="text"
           name="service"
-          placeholder="Service demandé (ex : marquage au sol)"
+          placeholder="Service demandé"
           value={formData.service}
           onChange={handleChange}
           required
@@ -75,11 +81,11 @@ const DemandeDevis = () => {
           onChange={handleChange}
           rows={4}
         ></textarea>
-        <button type="submit">Envoyer via WhatsApp</button>
+        <button type="submit">Envoyer</button>
       </form>
+      {status && <p className="status-message">{status}</p>}
     </div>
   );
 };
-
 
 export default DemandeDevis;
