@@ -28,7 +28,7 @@ function Home() {
           </ul>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/demandedevis" className="btn-primary">Demander un devis</a>
+            <Link to="/demandedevis" className="btn-primary">Demander un devis</Link>
           </div>
         </div>
       </section>
