@@ -20,6 +20,8 @@ function Layout() {
   // Define paths where the images should be hidden
   const hideHeaderImages = [
     '/services',
+    "/realisations",
+    "/presentation",
     '/marquageSol',
     '/tracage',
     '/signalisation',
