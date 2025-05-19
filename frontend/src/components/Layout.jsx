@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles.css';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
@@ -13,6 +16,8 @@ import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
 import DemandeDevis from './demandeDevis';
+
+
 
 function Layout() {
   const location = useLocation();
@@ -64,12 +69,12 @@ function Layout() {
         <p className="marquee-text">
           ESER-PROF Sarl — l'excellence au service du BTP —
           <a
-            href="https://wa.me/22612345678"
+            href="https://wa.me/+17203946223"
             target="_blank"
             rel="noreferrer"
             style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
           >
-            Contacter sur WhatsApp: +226 12 34 56 78
+            Contactez sur WhatsApp: +226 12 34 56 78
           </a>
         </p>
       </div>

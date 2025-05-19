@@ -9,7 +9,10 @@
   --border-radius: 12px;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   --transition-speed: 0.3s;
+  
 }
+
+
 
 /* Conteneur principal */
 .container {
@@ -110,4 +113,53 @@
   .presentation-card {
     padding: 1.5rem;
   }
+}
+
+
+/* === GRILLE D'ÉQUIPE === */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* === CARTE MEMBRE ÉQUIPE === */
+.team-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* === AVATAR CERCLE === */
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* === NOM === */
+.team-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+/* === RÔLE === */
+.team-role {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  opacity: 0.85;
 }

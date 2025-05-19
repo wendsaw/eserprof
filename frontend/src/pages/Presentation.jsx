@@ -2,46 +2,68 @@ import React from 'react';
 import './presentation.css';
 
 const Presentation = () => {
+  const equipe = [
+    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général' },
+    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique' },
+    { name: 'Abdoulaye Zongo', role: 'Chef de chantier' },
+    { name: 'Mariam Compaoré', role: 'Responsable Qualité' },
+    { name: 'Issa Traoré', role: 'Technicien signalisation' },
+    { name: 'Sophie Yaméogo', role: 'Assistante administrative' },
+  ];
+
   return (
-    <div className="container mx-auto p-8 bg-gray-100">
-      <div className="bg-white shadow-lg rounded-2xl p-6">
-        <h1 className="text-3xl font-bold mb-4">ESER-PROF</h1>
-        <p className="text-gray-700 mb-6">
-          ESER-PROF est une société à responsabilité limitée, implantée au cœur du Burkina Faso et spécialisée dans la peinture routière et la signalisation. Depuis sa création, nous mettons notre savoir-faire au service de la sécurité et de la fluidité du trafic routier, en proposant des marquages durables, visibles et conformes aux normes en vigueur.
+    <div className="container">
+      <div className="presentation-card">
+        <h1 className="presentation-title">ESER-PROF</h1>
+        <p className="presentation-text">
+          ESER-PROF est une société à responsabilité limitée, implantée au cœur du Burkina Faso...
         </p>
 
-        <h2 className="text-2xl font-semibold mb-2">Notre mission</h2>
-        <ul className="list-disc list-inside text-gray-700 mb-6">
-          <li>Garantir la sécurité des usagers de la route grâce à un marquage net, précis et résistant</li>
-          <li>Optimiser la gestion du trafic en assurant une signalisation claire et cohérente</li>
-          <li>Contribuer à l’amélioration du réseau routier burkinabè par des interventions rapides et professionnelles</li>
+        <h2 className="section-title">Notre mission</h2>
+        <ul className="presentation-list">
+          <li>Garantir la sécurité des usagers de la route grâce à un marquage net</li>
+          <li>Optimiser la gestion du trafic en assurant une signalisation claire</li>
+          <li>Contribuer à l’amélioration du réseau routier burkinabè</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mb-2">Nos services</h2>
-        <ul className="list-disc list-inside text-gray-700 mb-6">
-          <li><strong>Marquage au sol :</strong> bandes lane, passages piétons, flèches directionnelles</li>
-          <li><strong>Application de thermoplastique :</strong> bandes high-performance pour un marquage longue durée</li>
-          <li><strong>Signalisation verticale :</strong> installation et remplacement de panneaux routiers</li>
-          <li><strong>Entretien et renouvellement :</strong> rafraîchissement périodique des marquages existants</li>
-          <li><strong>Conseil et ingénierie :</strong> diagnostic de voirie et préconisations techniques</li>
+        <h2 className="section-title">Nos services</h2>
+        <ul className="presentation-list">
+          <li><strong>Marquage au sol :</strong> bandes lane, passages piétons...</li>
+          <li><strong>Application de thermoplastique :</strong> bandes haute performance</li>
+          <li><strong>Signalisation verticale :</strong> panneaux routiers</li>
+          <li><strong>Entretien :</strong> rafraîchissement des marquages</li>
+          <li><strong>Ingénierie :</strong> diagnostics et conseils techniques</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mb-2">Nos engagements</h2>
-        <ul className="list-disc list-inside text-gray-700 mb-6">
+        <h2 className="section-title">Nos engagements</h2>
+        <ul className="presentation-list">
           <li><strong>Qualité :</strong> matériaux certifiés, contrôles rigoureux</li>
-          <li><strong>Sécurité :</strong> respect strict des procédures et des normes industrielles</li>
-          <li><strong>Délais :</strong> planification optimisée pour minimiser les perturbations</li>
-          <li><strong>Écologie :</strong> utilisation de peintures à faible teneur en COV</li>
+          <li><strong>Sécurité :</strong> respect des normes</li>
+          <li><strong>Délais :</strong> interventions rapides</li>
+          <li><strong>Écologie :</strong> peintures à faible COV</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mb-2">Pourquoi choisir ESER-PROF ?</h2>
-        <ol className="list-decimal list-inside text-gray-700 mb-6">
-          <li><strong>Expertise locale :</strong> une équipe formée aux contraintes climatiques et au réseau routier du Burkina</li>
-          <li><strong>Matériel performant :</strong> équipements de haute technologie pour une application rapide et uniforme</li>
-          <li><strong>Accompagnement personnalisé :</strong> du diagnostic initial à la réception des travaux</li>
+        <h2 className="section-title">Pourquoi choisir ESER-PROF ?</h2>
+        <ol className="presentation-steps">
+          <li><strong>Expertise locale :</strong> adaptée au réseau burkinabè</li>
+          <li><strong>Matériel performant :</strong> équipements modernes</li>
+          <li><strong>Accompagnement personnalisé :</strong> du début à la fin</li>
         </ol>
 
-        
+        <h2 className="section-title">Notre équipe</h2>
+        <div className="team-grid">
+          {equipe.map((member, index) => (
+            <div key={index} className="team-card">
+              <img
+                src={`https://via.placeholder.com/150?text=${member.name.split(' ')[0]}`}
+                alt={member.name}
+                className="team-avatar"
+              />
+              <h3 className="team-name">{member.name}</h3>
+              <p className="team-role">{member.role}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
