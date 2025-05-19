@@ -12,7 +12,7 @@ import Glissiere from './Glissiere';
 import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
-
+import DemandeDevis from './demandeDevis';
 
 function Layout() {
   const location = useLocation();
@@ -87,6 +87,7 @@ function Layout() {
         <Route path="/peageModerne" element={<PeageModerne />} />
         <Route path="/aeroport" element={<Aeroport />} />
         <Route path="/gourcy" element={<Gourcy />} />
+         <Route path="/demandedevis" element={<DemandeDevis/>} />
         
       </Routes>
 
