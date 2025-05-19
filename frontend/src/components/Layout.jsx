@@ -12,7 +12,7 @@ import Glissiere from './Glissiere';
 import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
-import DemandeDevis from './demandeDevis';
+import DemandeDevis from './DemandeDevis';
 
 function Layout() {
   const location = useLocation();

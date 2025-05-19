@@ -20,7 +20,7 @@ const DemandeDevis = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = '+17203946223'; // ← À remplacer par le vrai numéro ESER-PROF
+    const phoneNumber = '+17203946223'; 
     const text = `📩 *Demande de devis ESER-PROF* \n
 👤 *Nom* : ${formData.nom}
 📧 *Email* : ${formData.email}
