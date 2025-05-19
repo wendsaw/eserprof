@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './tracage.css'; // Assurez-vous que ce fichier contient les styles globaux
 
 function Tracage() {
@@ -42,8 +43,9 @@ function Tracage() {
 
         <div className="cta-contact">
           <div style={{ textAlign: 'center' }}>
-            <a href="contact" className="btn-primary">Demander un devis</a>
+            <Link to="/demandedevis" className="btn-primary">Demander un devis</Link>
           </div>
+          <br />
           <p>
             📞 Téléphone : <strong>+226 12 34 56 78</strong><br />
             💬 <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a><br />

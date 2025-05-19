@@ -1,188 +1,212 @@
-/* === HERO === */
+
+/* === GENERAL RESET === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fffdf9;
+  color: #222;
+}
+
+/* === HERO SECTION === */
 .hero {
-  text-align: center;
-  padding: 3rem 1rem;
   background-color: #2b2b2b;
   color: #f9c900;
+  padding: 3rem 1rem;
+  text-align: center;
 }
 
-.hero ul {
-  list-style: disc;
-  margin: 1rem 0;
-  padding-left: 2rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.hero ul a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.hero ul a:hover {
-  text-decoration: underline;
-  color: #f9c900;
-}
-
-.hero h1,
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.hero-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 500px;
+  font-size: 1rem;
 }
 
-/* === BOUTONS === */
-.btn,
-.btn-primary,
-.btn-secondary {
-   background-color: #ffe100;
+.hero-list li {
+  margin-bottom: 0.5rem;
+}
+
+.hero-list a {
+  color: #f9c900;
+  text-decoration: none;
+}
+
+.hero-list a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #ffe100;
   color: #000;
   font-weight: bold;
-  padding: 0.75rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
-.btn:hover,
-.btn-primary:hover,
-.btn-secondary:hover {
+.btn-primary:hover {
   background-color: #f9c900;
-  color: #000;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
-/* === SERVICES === */
+/* === BANNER IMAGE === */
+img[alt="Illustration signalisation"] {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* === SERVICES SECTION === */
 .services {
-  text-align: center;
-  padding: 40px 20px;
   background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .services-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .services-list article {
-  flex: 1 1 250px;
-  max-width: 320px;
-  text-align: center;
-  border: 1px solid #ddd;
+  background: white;
   padding: 1rem;
   border-radius: 10px;
-  background-color: #fff;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.services-list article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .services-list img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
+  margin-bottom: 1rem;
 }
 
-/* === RÉALISATIONS === */
+.services-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-list p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* === RÉALISATIONS SECTION === */
 .realisations {
-  text-align: center;
-  padding: 40px 20px;
   background-color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.realisations h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .gallery {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.gallery img {
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  border: 1px solid #ccc
+.realisation-block img {
+  width: 95%;
+  height: 95%;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ccc;
 }
 
-/* === ZONES === */
-.zones {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-.zones img {
-  width: 200px;
-  margin-top: 20px;
-  max-width: 90%;
-}
-
-/* === PARTENAIRES === */
+/* === PARTENAIRES SECTION === */
 .partenaires {
   background-color: #000;
-  color: #fff;
+  color: white;
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 2rem 1rem;
+}
+
+.partenaires h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .card {
-  width: 260px;
-  height: 180px;
-  perspective: 1200px;
-  position: relative;
+  perspective: 1000px;
 }
 
 .card-inner {
-  position: relative;
   width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease;
+  height: 180px;
+  position: relative;
   transform-style: preserve-3d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+  transition: transform 0.6s ease;
 }
 
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   backface-visibility: hidden;
+  border-radius: 12px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
   box-sizing: border-box;
-  font-size: 1rem;
   text-align: center;
-  font-weight: 600;
-  color: #1f1f1f;
 }
 
 .card-front {
-  background: linear-gradient(135deg, #f9c900, #fff);
+  background: linear-gradient(to bottom, #f9c900, #fff);
+  color: #1f1f1f;
+  font-weight: bold;
   border: 2px solid #1f1f1f;
 }
 
@@ -193,37 +217,27 @@
   border: 2px solid #f9c900;
 }
 
-.card-front p,
-.card-back p {
-  font-style: normal;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+/* === CONTACT SECTION === */
+section h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
-.card-front span,
-.card-back span {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* === FORMULAIRE DE CONTACT === */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
-  margin: auto;
+  margin: 2rem auto;
   padding: 1rem;
 }
 
-form input,
-form textarea {
+form input, form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 form button {
@@ -241,117 +255,26 @@ form button {
   margin-top: 2rem;
 }
 
-/* === SECTIONS === */
-section {
-  padding: 2rem;
-}
-
-/* === BANNER IMAGE RESPONSIVENESS === */
-img[alt="Illustration signalisation"] {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-/* === MEDIA QUERIES === */
-@media (max-width: 768px) {
-  .hero h1,
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .services-list {
-    gap: 1rem;
-  }
-
-  .gallery img {
-    max-width: 90vw;
-  }
-
-  .zones img {
-    width: 60%;
-  }
-
-  .btn,
-  .btn-primary {
-    width: 60%;
-  }
-}
-
+/* === RESPONSIVE FIX === */
 @media (max-width: 480px) {
-  .hero h1,
-  .hero h2 {
+  .hero h2,
+  .services h2,
+  .realisations h2,
+  .partenaires h2,
+  section h2 {
     font-size: 1.5rem;
   }
 
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .btn,
   .btn-primary {
     width: 100%;
-    padding: 0.75rem 1rem;
   }
 
-  .card {
-    height: 160px;
+  .services-list h3,
+  .services-list p {
+    font-size: 0.9rem;
   }
 
   form {
     padding: 0.5rem;
   }
-
-  .services-list article h3,
-  .services-list article p {
-    font-size: 0.95rem;
-  }
-}
-.hero-list {
-  list-style: disc;
-  padding-left: 5vw;
-  margin: 1rem 0;
-  text-align: left;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-/* Responsive adjustment */
-@media (min-width: 768px) {
-  .hero-list {
-    padding-left: 8rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-list {
-    padding-left: 12rem;
-  }
-}
-@media (max-width: 768px) {
-  .hero ul {
-    padding-left: 1.5rem !important;
-  }
-}
-.hero > div {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-hero .btn-primary {
-  display: block;
- 
 }

@@ -5,9 +5,9 @@ const Presentation = () => {
   const equipe = [
     { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général' },
     { name: 'GUETE Arzouma Roland', role: 'Directeur Technique' },
-    { name: 'Abdoulaye Zongo', role: 'Chef de chantier' },
-    { name: 'Mariam Compaoré', role: 'Responsable Qualité' },
-    { name: 'Issa Traoré', role: 'Technicien signalisation' },
+    { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics' },
+    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité' },
+    { name: 'TIENDREBEOGO Stéphane Kamal', role: ' technicien supérieur de génie civil' },
     { name: 'Sophie Yaméogo', role: 'Assistante administrative' },
   ];
 
