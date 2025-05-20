@@ -97,6 +97,7 @@ img[alt="Illustration signalisation"] {
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .services-list article {
@@ -106,6 +107,10 @@ img[alt="Illustration signalisation"] {
   border: 1px solid #ddd;
   transition: transform 0.3s ease;
   text-align: center;
+  background: linear-gradient(to bottom, #f9c900, #fff);
+  color: #1f1f1f;
+  font-weight: bold;
+  border: 2px solid #1f1f1f;
 }
 
 .services-list article:hover {
