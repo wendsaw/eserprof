@@ -21,7 +21,7 @@ function Contact() {
     setStatus('Envoi en cours...');
 
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('https://eserprof-api.onrender.com/api/contact', formData);
       setStatus('✅ Message envoyé avec succès.');
       setFormData({ nom: '', email: '', telephone: '', message: '' });
     } catch (err) {

@@ -23,7 +23,8 @@ const DemandeDevis = () => {
     setStatus('Envoi en cours...');
 
     try {
-      await axios.post('http://localhost:5000/api/contact', formData); // ← Modifier URL en prod
+      await axios.post('https://eserprof-api.onrender.com/api/contact', formData); 
+
       setStatus('✅ Votre demande a été envoyée avec succès.');
       setFormData({
         nom: '',
