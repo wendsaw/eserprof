@@ -3,12 +3,12 @@ import './presentation.css';
 
 const Presentation = () => {
   const equipe = [
-    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général' },
-    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique' },
-    { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics' },
-    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité' },
-    { name: 'TIENDREBEOGO Stéphane Kamal', role: ' technicien supérieur de génie civil' },
-    { name: 'Sophie Yaméogo', role: 'Assistante administrative' },
+    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général',email: 'mikiemaabdoul@eserprof.com'  },
+    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique',email: 'mikiemaabdoul@eserprof.com'  },
+    { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics',email: 'mikiemaabdoul@eserprof.com'  },
+    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité',email: 'mikiemaabdoul@eserprof.com' },
+    { name: 'TIENDREBEOGO Stéphane Kamal', role: ' technicien supérieur de génie civil',email: 'mikiemaabdoul@eserprof.com' },
+    { name: 'Sophie Yaméogo', role: 'Assistante administrative' ,email: 'mikiemaabdoul@eserprof.com'},
   ];
 
   return (
@@ -61,6 +61,7 @@ const Presentation = () => {
               />
               <h3 className="team-name">{member.name}</h3>
               <p className="team-role">{member.role}</p>
+               <p className="team-role">{member.email}</p>
             </div>
           ))}
         </div>

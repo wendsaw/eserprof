@@ -12,6 +12,7 @@ const DemandeDevis = () => {
   });
 
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,9 +22,10 @@ const DemandeDevis = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Envoi en cours...');
+    setIsSubmitting(true);
 
     try {
-      await axios.post('https://eserprof-api.onrender.com/api/contact', formData); 
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData);
 
       setStatus('✅ Votre demande a été envoyée avec succès.');
       setFormData({
@@ -36,6 +38,8 @@ const DemandeDevis = () => {
     } catch (error) {
       console.error('Erreur d’envoi', error);
       setStatus('❌ Une erreur est survenue. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -81,8 +85,11 @@ const DemandeDevis = () => {
           value={formData.message}
           onChange={handleChange}
           rows={4}
+          required
         ></textarea>
-        <button type="submit">Envoyer</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Envoi...' : 'Envoyer'}
+        </button>
       </form>
       {status && <p className="status-message">{status}</p>}
     </div>

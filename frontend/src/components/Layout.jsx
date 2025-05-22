@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles.css';
 import Home from '../pages/Home';
@@ -41,6 +42,7 @@ function Layout() {
           <div className="logo">
             <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
           </div>
+         
 
           <nav>
             <ul>
@@ -55,14 +57,14 @@ function Layout() {
         </div>
 
         {/* Bottom image strip — shown only when not on detail page */}
-        {!hideHeaderImages && (
+        {/* {!hideHeaderImages && (
           <div className="header-images">
             <Link to="/marquageSol"><img src="/images/marquage.png" alt="Marquage" /></Link>
             <Link to="/tracage"><img src="/images/tracage.png" alt="Traçage" /></Link>
             <Link to="/signalisation"><img src="/images/signalisation1.png" alt="Signalisation" /></Link> 
-           <Link to="/glissiere"><img src="/images/glissiere.png" alt="Glissière" /></Link> 
+           <Link to="/glissiere"><img src="realisations/glissiere/image1.jpg" alt="Glissière" /></Link> 
           </div>
-        )}
+        )} */}
       </header>
 
       <div className="marquee-container">
@@ -74,7 +76,7 @@ function Layout() {
             rel="noreferrer"
             style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
           >
-            Contactez sur WhatsApp: +226 12 34 56 78
+            Contactez nous  WhatsApp: +226 12 34 56 78
           </a>
         </p>
       </div>
@@ -92,7 +94,7 @@ function Layout() {
         <Route path="/peageModerne" element={<PeageModerne />} />
         <Route path="/aeroport" element={<Aeroport />} />
         <Route path="/gourcy" element={<Gourcy />} />
-         <Route path="/demandedevis" element={<DemandeDevis/>} />
+        <Route path="/demandedevis" element={<DemandeDevis/>} />
         
       </Routes>
 

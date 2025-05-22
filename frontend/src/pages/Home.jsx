@@ -16,6 +16,9 @@ function Home() {
   <Link to="/tracage"><li>Traçage de parking</li></Link>
   <Link to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link> 
   <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link> 
+   <Link> <li>Préfabrication d'ouvrage (dalots et buses)</li></Link>
+   <Link> <li>Fourniture et pose de tout type de bordures hautes</li></Link>
+
 </ul>
 
 
@@ -31,17 +34,13 @@ function Home() {
 
 
       {/* Image bannière */}
-      <img
-        src="./images/homeImage2.png"
-        alt="Illustration signalisation"
-        style={{
-          width: '100vw',
-          height: '400px',
-          objectFit: 'cover',
-          display: 'block',
-          marginLeft: 'calc(-50vw + 50%)'
-        }}
-      />
+      {/* Bannière avec 3 images en arrière-plan */}
+<section className="hero-banner">
+  <div className="background-slide bg1"></div>
+  {/* <div className="background-slide bg2"></div>
+  <div className="background-slide bg3"></div> */}
+</section>
+
 
       {/* Section Services */}
       <section className="services">
@@ -49,30 +48,44 @@ function Home() {
         <div className="services-list">
           <article>
             <Link to="/marquageSol" className="service-link">
-              <img src="./images/marquage.png" alt="Marquage au sol" />
+              {/* <img src="./images/marquage.png" alt="Marquage au sol" /> */}
               <h3>Marquage au sol et entretien de la signalisation horizontale</h3>
               <p>Lignes de chaussée, passages piétons, flèches directionnelles…</p>
             </Link>
           </article>
           <article>
             <Link to="/tracage" className="service-link">
-              <img src="./images/tracage.png" alt="Traçage de parkings" />
+              {/* <img src="./images/tracage.png" alt="Traçage de parkings" /> */}
               <h3>Traçage de parkings et marquages de stationnement</h3>
               <p>Zones PMR, numérotation, flèches, hachures…</p>
             </Link>
           </article>
           <article>
             <Link to="/signalisation" className="service-link">
-              <img src="./images/signalisation1.png" alt="Panneaux de signalisation" />
+              {/* <img src="./images/signalisation1.png" alt="Panneaux de signalisation" /> */}
               <h3>Fourniture et pose de panneaux de signalisation routière</h3>
               <p>Signalisation verticale conforme à la réglementation</p>
             </Link>
           </article>
           <article>
             <Link to="/glissiere" className="service-link">
-              <img src="./images/glissiere.png" alt="Glissières de sécurité" />
+              {/* <img src="./images/glissiere.png" alt="Glissières de sécurité" /> */}
               <h3>Installation de glissières de sécurité et garde-corps</h3>
               <p>Dispositifs de retenue et de protection en bordure de voirie</p>
+            </Link>
+          </article>
+          <article>
+            <Link to="/tracage" className="service-link">
+              {/* <img src="./images/tracage.png" alt="Traçage de parkings" /> */}
+              <h3>Préfabrication d'ouvrage (dalots et buses)</h3>
+              <p>Routes nationales et rurales</p>
+            </Link>
+          </article>
+          <article>
+            <Link to="/tracage" className="service-link">
+              {/* <img src="./images/tracage.png" alt="Traçage de parkings" /> */}
+              <h3>Fourniture et pose de tout type de bordures hautes</h3>
+              <p>délimiter les chaussées</p>
             </Link>
           </article>
 
