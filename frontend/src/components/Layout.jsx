@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'; // 👈 Import the icons
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,13 +37,20 @@ function Layout() {
 
   return (
     <>
+    
+
+    
       <header>
         {/* Top: logo + nav */}
         <div className="header-top">
           <div className="logo">
             <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
           </div>
-         
+         <div className="social-icons">
+    <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+    <a href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
+    <a href="https://wa.me/+22612345678" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+  </div>
 
           <nav>
             <ul>

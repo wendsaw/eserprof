@@ -184,3 +184,18 @@ footer {
   }
 }
 
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+.social-icons a {
+  color: #b45a05; /* or white if header bg is dark */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f9c900;
+}
