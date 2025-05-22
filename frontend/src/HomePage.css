@@ -89,7 +89,7 @@ body {
 
 }
 .hero {
-  background-image: url('images/cleanPicture1.png');
+  background-image: url('/images/cleanPicture1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,17 +120,17 @@ body {
 
 /* Set distinct images and positioning */
 .bg1 {
-  background-image: url('images/cleanPicture2.png');
+  background-image: url('/images/cleanPicture2.png');
   background-position: center left;
 }
 
 .bg2 {
-  background-image: url('images/cleanPicture3.png');
+  background-image: url('/images/cleanPicture3.png');
   background-position: center;
 }
 
 .bg3 {
-  background-image: url('images/cleanPicture4.png');
+  background-image: url('/images/cleanPicture4.png');
   background-position: center right;
 }
 
