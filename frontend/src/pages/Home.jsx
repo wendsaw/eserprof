@@ -86,7 +86,7 @@ function Home() {
           </article>
           <article>
             <article>
-            <Link to="/ouvrage" className="service-link">
+            <Link to="/prefabrication" className="service-link">
               <div className="img-box img-service5"></div>
               <h3>Préfabrication d'ouvrage en béton armé (dalots et buses)</h3>
               <p>Routes nationales et rurales</p>

@@ -1,165 +1,166 @@
-/* Variables de thème */
+/* === VARIABLES DE THÈME RAFFINÉES === */
 :root {
-  --primary-color: #2C3E50;      /* Bleu gris sombre, couleur principale */
-  --accent-color: #2980B9;       /* Bleu vif pour accents */
-  --background-color: #F5F7FA;   /* Gris très clair pour fonds */
-  --text-color: #333333;         /* Gris foncé pour le texte */
-  --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --body-font: 'Open Sans', Arial, sans-serif;
-  --border-radius: 12px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  --transition-speed: 0.3s;
-  
+  --primary-color: #1a1a2e;
+  --accent-color: #0f3460;
+  --background-color: #f4f6fc;
+  --text-color: #2e2e2e;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --border-radius: 14px;
+  --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --transition-speed: 0.4s;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, .presentation-title {
+  font-family: 'Poppins', sans-serif;
 }
 
 
-
-/* Conteneur principal */
+/* === CONTENEUR PRINCIPAL === */
 .container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem;
   background-color: var(--background-color);
 }
 
-/* Carte de présentation */
+/* === PRÉSENTATION === */
 .presentation-card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  padding: 2rem;
+  padding: 2.5rem;
   transition: box-shadow var(--transition-speed);
 }
+
 .presentation-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Titres */
 .presentation-title {
   font-family: var(--heading-font);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
-  border-bottom: 3px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
   display: inline-block;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.3rem;
 }
 
 .section-title {
   font-family: var(--heading-font);
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: var(--primary-color);
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-/* Texte et listes */
-.presentation-text,
-.presentation-text p {
-  font-family: var(--body-font);
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--text-color);
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.presentation-list {
-  padding-left: 1.25rem;
+.presentation-text,
+.presentation-text p {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
   margin-bottom: 1.5rem;
 }
 
-.presentation-list li {
-  margin-bottom: 0.5rem;
-}
-
-/* Listes numérotées */
+.presentation-list,
 .presentation-steps {
-  padding-left: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-.presentation-steps li {
-  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.75rem;
+  font-family: var(--body-font);
+  font-size: 1.05rem;
+  color: var(--text-color);
 }
 
-/* Points forts / accents */
+.presentation-list li,
+.presentation-steps li {
+  margin-bottom: 0.65rem;
+}
+
 .accent {
   color: var(--accent-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Informations de contact */
 .contact-info {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   font-family: var(--body-font);
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-color);
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
 .contact-info strong {
   color: var(--primary-color);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .presentation-title {
-    font-size: 2rem;
-  }
-  .section-title {
-    font-size: 1.5rem;
-  }
-  .container {
-    padding: 1rem;
-  }
-  .presentation-card {
-    padding: 1.5rem;
-  }
-}
-
-
-/* === GRILLE D'ÉQUIPE === */
+/* === ÉQUIPE - GRILLE === */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* === CARTE MEMBRE ÉQUIPE === */
 .team-card {
   background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem 1rem;
+  border-radius: var(--border-radius);
+  padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* === AVATAR CERCLE === */
 .team-avatar {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--accent-color);
+  border: 4px solid var(--accent-color);
   margin-bottom: 1rem;
 }
 
-/* === NOM === */
 .team-name {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--primary-color);
-  margin-bottom: 0.25rem;
+  font-family: var(--heading-font);
+  margin-bottom: 0.4rem;
 }
 
-/* === RÔLE === */
 .team-role {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-color);
-  opacity: 0.85;
+  opacity: 0.9;
+  font-family: var(--body-font);
 }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .presentation-title {
+    font-size: 2.2rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+  .presentation-card {
+    padding: 2rem;
+  }
+}
+
+
+/* === GOOGLE FONTS IMPORT (à insérer dans l'HTML head) === */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> */

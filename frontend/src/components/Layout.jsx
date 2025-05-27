@@ -18,6 +18,8 @@ import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
 import DemandeDevis from './demandeDevis';
+import Prefabrication from './Prefabrication';
+import Bordure from './Bordure';
 
 
 
@@ -56,9 +58,9 @@ function Layout() {
           <nav>
             <ul>
               <li><Link to="/">Accueil</Link></li>
+               <li><Link to="/presentation">Presentation</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/realisations">Réalisations</Link></li>
-               <li><Link to="/presentation">Presentation</Link></li>
               <li><Link to="/contact">Contact</Link></li>
              
             </ul>
@@ -104,6 +106,8 @@ function Layout() {
         <Route path="/aeroport" element={<Aeroport />} />
         <Route path="/gourcy" element={<Gourcy />} />
         <Route path="/demandedevis" element={<DemandeDevis/>} />
+        <Route path="/prefabrication" element={<Prefabrication/>} />
+        <Route path="/bordure" element={<Bordure/>}/>
         
       </Routes>
 

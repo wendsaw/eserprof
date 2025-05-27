@@ -1,0 +1,54 @@
+.prefab-container {
+  background-color: #f4f6fc;
+  padding: 3rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #2e2e2e;
+}
+
+.prefab-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.prefab-title {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0f3460;
+  margin-bottom: 1rem;
+}
+
+.prefab-subtitle {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.prefab-intro, .prefab-text, .prefab-contact {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prefab-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prefab-list li {
+  margin-bottom: 0.6rem;
+}
+
+.prefab-contact {
+  background-color: #0f3460;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+}
