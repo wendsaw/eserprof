@@ -49,7 +49,8 @@ function Layout() {
          <div className="social-icons">
     <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer"><FaFacebookF /></a>
     <a href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
-    <a href="https://wa.me/+22612345678" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+    <a href="https://wa.me/+22679090909" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+     
   </div>
 
           <nav>
@@ -79,12 +80,12 @@ function Layout() {
         <p className="marquee-text">
           ESER-PROF Sarl — l'excellence au service du BTP —
           <a
-            href="https://wa.me/+17203946223"
+            href="https://wa.me/+22679090909"
             target="_blank"
             rel="noreferrer"
             style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
           >
-            Contactez nous  WhatsApp: +226 12 34 56 78
+            Contactez nous  WhatsApp: +22679090909/+22675418703
           </a>
         </p>
       </div>

@@ -41,7 +41,7 @@ header {
 }
 
 .logo img {
-  width: 160px;
+  width: 300px;
   max-width: 100%;
   height: auto;
 }
@@ -186,13 +186,13 @@ footer {
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   margin: 0 2rem;
 }
 
 .social-icons a {
   color: #b45a05; /* or white if header bg is dark */
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
