@@ -241,26 +241,26 @@ body {
 
 /* Example classes for each image background */
 .img-service1 {
-  background-image: url('./images/service1.png');
+  background-image: url('/images/service1.png');
 }
 
 .img-service2 {
-  background-image: url('./images/service2.png');
+  background-image: url('/images/service2.png');
 }
 
 .img-service3 {
-  background-image: url('./images/service3.png');
+  background-image: url('/images/service3.png');
 }
 
 .img-service4 {
-  background-image: url('./images/service4.png');
+  background-image: url('/images/service4.png');
 }
 .img-service5 {
-  background-image: url('./images/service5.png');
+  background-image: url('/images/service5.png');
 }
 
 .img-service6 {
-  background-image: url('./images/service6.png');
+  background-image: url('/images/service6.png');
 }
 
 
