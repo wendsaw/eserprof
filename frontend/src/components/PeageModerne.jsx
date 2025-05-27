@@ -63,7 +63,7 @@ function PeageModerne() {
     <div style={{ width: '90%', margin: '2rem auto' }}>
       <Slider {...settings}>
         <div>
-          <img src="/realisations/peagesModerne/image1.jpg" alt="Péage moderne 1" style={{height:'400px'}} />
+          <img src="/realisations/peagesModerne/image1.png" alt="Péage moderne 1" style={{height:'400px'}} />
         </div>
         <div>
           <img src="/realisations/peagesModerne/image2.jpg" alt="Péage moderne 2" style={{height:'400px'}} />

@@ -9,7 +9,7 @@ function Services() {
               <div className="gallery">
                 <div className="realisation-block">
                   <Link to="/peageModerne"><h3>Poste de péage moderne</h3>
-                  <img src="/realisations/peagesModerne/image1.jpg" alt="Péage moderne" /></Link>
+                  <img src="/realisations/peagesModerne/image1.png" alt="Péage moderne" /></Link>
                 </div>
       
                 <div className="realisation-block">
