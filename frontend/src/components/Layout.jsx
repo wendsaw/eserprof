@@ -18,7 +18,7 @@ import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
 import DemandeDevis from './demandeDevis';
-import Prefabrication from '../components/Prefabrication';
+import Prefa from './Prefa';
 import Bordure from './Bordure';
 
 
@@ -106,7 +106,7 @@ function Layout() {
         <Route path="/aeroport" element={<Aeroport />} />
         <Route path="/gourcy" element={<Gourcy />} />
         <Route path="/demandedevis" element={<DemandeDevis/>} />
-        <Route path="/prefabrication" element={<Prefabrication/>} />
+        <Route path="/prefa" element={<Prefa/>} />
         <Route path="/bordure" element={<Bordure/>}/>
         
       </Routes>

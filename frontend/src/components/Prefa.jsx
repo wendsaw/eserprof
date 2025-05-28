@@ -1,9 +1,9 @@
 import React from 'react';
-import './prefabrication.css';
+import './prefa.css';
 
 import { Link } from 'react-router-dom';
 
-const Prefabrication = () => {
+const Prefa = () => {
   return (
     <section className="prefab-container">
       <div className="prefab-content">
@@ -49,4 +49,4 @@ const Prefabrication = () => {
   );
 };
 
-export default Prefabrication;
+export default Prefa;
