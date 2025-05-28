@@ -29,7 +29,9 @@
   color: #1a1a2e;
 }
 
-.prefab-intro, .prefab-text, .prefab-contact {
+.prefab-intro,
+.prefab-text,
+.prefab-contact {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
