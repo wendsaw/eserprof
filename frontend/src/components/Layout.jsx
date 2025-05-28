@@ -18,7 +18,7 @@ import PeageModerne from './PeageModerne';
 import Aeroport from './Aeroport';
 import Gourcy from './Gourcy'
 import DemandeDevis from './demandeDevis';
-import Prefabrication from './Prefabrication';
+import Prefabrication from '..components/Prefabrication';
 import Bordure from './Bordure';
 
 
