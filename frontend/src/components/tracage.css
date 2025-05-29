@@ -1,32 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+.tracage-container {
+  background-color: #f5f8ff;
+  padding: 3rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
 
-.tracage-page {
-  padding: 2rem;
-  max-width: 900px;
+.tracage-wrapper {
+  max-width: 950px;
   margin: auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
-.section-title {
+.tracage-title {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #1f1f1f;
-}
-
-.section-content ul {
-  padding-left: 1.5rem;
+  color: #0f3460;
+ border-bottom: 4px solid #0f3460;
+  padding-left: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.section-content h3 {
-  color: #f9c900;
-  margin-top: 1.5rem;
+.tracage-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
-.cta-contact {
+.tracage-subtitle {
+  font-size: 1.4rem;
   margin-top: 2rem;
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+  border-bottom: 4px solid #0f3460;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.tracage-list {
+  padding-left: 2rem;
+  list-style: disc;
+  margin-bottom: 2rem;
+}
+
+.tracage-list li {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.tracage-cta {
   text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-tracage {
+  background-color: #00f929;
+  color: #0f3460;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-tracage:hover {
+  background-color: #e0b300;
+}
+.glissieres-contact {
+  background-color: #0f3460;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
 }

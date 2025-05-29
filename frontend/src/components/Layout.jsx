@@ -87,7 +87,7 @@ function Layout() {
             rel="noreferrer"
             style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
           >
-            Contactez nous  WhatsApp: +22679090909/+22675418703
+            📞 Besoin d’un devis ou d’un conseil technique ? <strong>Contactez-nous</strong> dès maintenant : +22679090909 +22675418703 
           </a>
         </p>
       </div>
@@ -114,8 +114,8 @@ function Layout() {
       <footer>
         <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
         <div className="social">
-          <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook</a>
-          <a href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
+          <a style={{color:'white', textDecoration:'none'}} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
+          <a style={{color:'white', textDecoration:'none'}} href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
         </div>
       </footer>
     </>

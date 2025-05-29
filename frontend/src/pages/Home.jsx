@@ -8,25 +8,25 @@ function Home() {
       {/* Section Héro */}
       <section className="hero">
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2>Société de Peinture Routière au Burkina</h2>
+          <h2 style={{fontFamily:"cursive"}} >Société de Peinture Routière au Burkina</h2>
 
 
-          <ul className="hero-list">
-            <Link to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
-            <Link to="/tracage"><li>Traçage de parking</li></Link>
-            <Link to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
-            <Link to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
-            <Link> <li>Préfabrication d'ouvrage (dalots et buses)</li></Link>
-            <Link> <li>Fourniture et pose de tout type de bordures hautes</li></Link>
-
+          <ul className="hero-list" >
+            <Link style={{textDecoration:'none'}} to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
+            <Link style={{textDecoration:'none'}} to="/tracage"><li>Traçage de parking</li></Link>
+            <Link style={{textDecoration:'none'}} to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
+            <Link style={{textDecoration:'none'}} to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
+            <Link  style={{textDecoration:'none'}}> <li>Préfabrication d'ouvrage, fourniture et pose de tout type de bordures hautes</li></Link>
+            <Link style={{textDecoration:'none'}}> <li>Infrastructures Ferroviaire</li></Link>
+            
           </ul>
 
 
 
 
-          <div style={{ textAlign: 'center' }}>
-            <Link to="/demandedevis" className="btn-primary">Demander un devis</Link>
-          </div>
+          <p className="prefab-contact">
+            <Link  style={{textDecoration:"none"}}  to='/demandedevis'>📞 Besoin d’un devis ou d’un conseil technique ? <strong>Contactez-nous</strong> dès maintenant !</Link>
+          </p>
         </div>
       </section>
 
@@ -41,10 +41,14 @@ function Home() {
   <div className="background-slide bg3"></div> */}
       </section>
 
+      {/* Section image de transition */}
+<section className="background-transition"></section>
+
+
 
       {/* Section Services */}
       <section className="services">
-        <h2>Nos Services</h2>
+        <h2 style={{fontFamily:"cursive"}}>Nos Services</h2>
         <div className="services-list">
           <article>
             <article>
@@ -88,8 +92,9 @@ function Home() {
             <article>
             <Link to="/prefa" className="service-link">
               <div className="img-box img-service5"></div>
-              <h3>Préfabrication d'ouvrage en béton armé (dalots et buses)</h3>
-              <p>Routes nationales et rurales</p>
+              <h3>Préfabrication d'ouvrage en béton armé (dalots,buses) Fourniture et pose de tout type de bordures hautes</h3>
+              <p>Routes nationales et rurales délimiter les chaussées</p>
+             
             </Link>
             </article>
           </article>
@@ -97,8 +102,9 @@ function Home() {
             <article>
             <Link to="/bordure" className="service-link">
               <div className="img-box img-service6"></div>
-              <h3>Fourniture et pose de tout type de bordures hautes</h3>
-              <p>délimiter les chaussées</p>
+              <h3>Infrastructures Ferroviaire </h3>
+              <p>Construction de voies ferrées (voie unique/double, voies industrielles)</p>
+              
             </Link>
             </article>
           </article>
@@ -109,20 +115,20 @@ function Home() {
       {/* realisations */}
 
       <section className="realisations">
-        <h2>Nos Réalisations</h2>
+        <h2 style={{fontFamily:"cursive"}}>Nos Réalisations</h2>
         <div className="gallery">
           <div className="realisation-block">
-            <Link to="/peageModerne"><h3>Poste de péage moderne</h3>
+            <Link style={{textDecoration:'none'}} to="/peageModerne"><h3 style={{fontFamily:"-moz-initial"}}>Poste de péage moderne</h3>
               <img src="/realisations/peagesModerne/image1.png" alt="Péage moderne" /></Link>
           </div>
 
           <div className="realisation-block">
-            <Link to="/aeroport"><h3>Aéroport de Ouagadougou</h3>
+            <Link style={{textDecoration:'none'}} to="/aeroport"><h3 style={{fontFamily:"-moz-initial"}}>Aéroport de Ouagadougou</h3>
               <img src="/realisations/aeroport/picture1.png" alt="Aéroport" /></Link>
           </div>
 
           <div className="realisation-block">
-            <Link to="/gourcy"><h3>Projet Gourcy</h3>
+            <Link style={{textDecoration:'none'}} to="/gourcy"><h3 style={{fontFamily:"-moz-initial"}}>Projet Gourcy</h3>
               <img src="/realisations/gourcy/image1.png" alt="Gourcy" /></Link>
           </div>
         </div>
@@ -133,17 +139,17 @@ function Home() {
 
       {/* partenaires */}
       <section className="partenaires">
-        <h2>Nos Partenaires</h2>
+        <h2 style={{fontFamily:"cursive"}}>Nos Partenaires</h2>
         <div className="cards">
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“Globex Construction”</p>
-                <span>Partenaire Technique</span>
+                <p style={{fontFamily:"fantasy"}}>“Globex Construction”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
               </div>
               <div className="card-back">
-                <p>“SOROUBAT”</p>
-                <span>Partenaire Technique</span>
+                <p style={{fontFamily:"fantasy"}}>“SOROUBAT”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Technique</span>
               </div>
             </div>
           </div>
@@ -151,36 +157,36 @@ function Home() {
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“Présidence du Faso”</p>
-                <span>Partenaire Technique</span>
+                <p style={{fontFamily:"fantasy"}}>“Présidence du Faso”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
               </div>
               <div className="card-back">
-                <p>“CMC Italie”</p>
-                <span>Partenaire Technique</span>
+                <p style={{fontFamily:"fantasy"}}>“CMC Italie”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Technique</span>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“CODEC”</p>
-                <span>Partenaire Financier</span>
+                <p style={{fontFamily:"fantasy"}}>“CODEC”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
               </div>
               <div className="card-back">
-                <p>“Coris Banque”</p>
-                <span>Partenaire Financier</span>
+                <p style={{fontFamily:"fantasy"}}>“Coris Banque”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Financier</span>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card-inner">
               <div className="card-front">
-                <p>“Ministère des infrastructures de Transport”</p>
-                <span>Partenaire institutionnel</span>
+                <p style={{fontFamily:"fantasy"}}>“Ministère des infrastructures de Transport”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire institutionnel</span>
               </div>
               <div className="card-back">
-                <p>“Banque Atlantique”</p>
-                <span>Partenaire Financier</span>
+                <p style={{fontFamily:"fantasy"}}>“Banque Atlantique”</p>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Financier</span>
               </div>
             </div>
           </div>
@@ -190,7 +196,7 @@ function Home() {
 
       {/* Section Contact */}
       <section >
-        <h2>Contactez-Nous</h2>
+        <h2 style={{fontFamily:"cursive"}}>Contactez-Nous</h2>
         <form>
           <input type="text" placeholder="Nom" required />
           <input type="email" placeholder="E-mail" required />
@@ -199,10 +205,10 @@ function Home() {
           <button type="submit">Envoyer</button>
         </form>
         <div className="contact-info">
-          <p><strong>Téléphone :</strong> +226 12 34 56 78</p>
+          <p><strong>Téléphone :</strong> +22679090909/+22675418703</p>
           <p><strong>Email :</strong> info@eserprof.com</p>
           <p><strong>Adresse :</strong> Ouagadougou, Burkina Faso</p>
-          <a href="https://wa.me/+17203946223" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a>
+          <a style={{textDecoration:"none"}} href="https://wa.me/+17203946223" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a>
         </div>
       </section>
     </main>

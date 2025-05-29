@@ -1,57 +1,81 @@
-.bordures-container {
-  background-color: #f2f6fc;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.railway-container {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   padding: 3rem 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #2c3e50;
 }
 
-.bordures-content {
-  max-width: 950px;
-  margin: 0 auto;
+.railway-wrapper {
+  max-width: 960px;
+  margin: auto;
   background-color: #fff;
   padding: 2.5rem;
   border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
 }
 
-.bordures-title {
-  font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
+.railway-title {
+  font-size: 2.4rem;
   color: #0f3460;
-  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
   border-bottom: 4px solid #0f3460;
+}
+
+.railway-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.railway-subtitle {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0f3460;
   display: inline-block;
   padding-bottom: 0.3rem;
 }
 
-.bordures-subtitle {
-  font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #1a1a2e;
+.railway-list {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
-.bordures-intro, .bordures-contact {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+.railway-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
 }
 
-.bordures-list {
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+.railway-cta {
+  text-align: center;
+  margin-top: 2.5rem;
 }
 
-.bordures-list li {
-  margin-bottom: 0.65rem;
+.btn-railway {
+  background-color: #0f3460;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.bordures-contact {
+.btn-railway:hover {
+  background-color: #1f4788;
+}
+.glissieres-contact {
   background-color: #0f3460;
   color: #fff;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
+  margin-top: 2rem;
 }

@@ -1,50 +1,50 @@
 import React from 'react';
-import './prefa.css';
-
+import './Prefa.css';
 import { Link } from 'react-router-dom';
 
 const Prefa = () => {
   return (
-    <section className="prefab-container">
-      <div className="prefab-content">
-        <h1 className="prefab-title">Préfabrication d’Ouvrages en Béton Armé</h1>
-        <p className="prefab-intro">
-          Chez <strong>ESER-PROF</strong>, nous proposons la conception, la fabrication et la livraison
-          de <strong>dalots</strong> et <strong>buses en béton armé</strong>, réalisés selon les normes
-          techniques en vigueur, pour répondre aux besoins en assainissement, franchissement
-          hydraulique et infrastructures routières.
+    <section className="prefa-container">
+      <div className="prefa-wrapper">
+        <h1 className="prefa-title">Préfabrication d’ouvrages en béton armé (dalots, buses)</h1>
+        <p className="prefa-text">
+          Nous fabriquons et posons des ouvrages préfabriqués en béton armé pour garantir la solidité
+          et la durabilité des infrastructures routières et hydrauliques. Nos dalots et buses sont conçus
+          selon les normes en vigueur pour répondre à tous les besoins de franchissement et d’écoulement.
         </p>
 
-        <h2 className="prefab-subtitle">Nos produits disponibles</h2>
-        <ul className="prefab-list">
+        <h2 className="prefa-subtitle">Nos produits comprennent :</h2>
+        <ul className="prefa-list">
           <li>Dalots rectangulaires préfabriqués</li>
-          <li>Buses circulaires en béton vibré</li>
-          <li>Éléments de regards et boîtes de visite</li>
-          <li>Longrines et structures de drainage</li>
+          <li>Buses circulaires béton armé</li>
+          <li>Pièces sur mesure pour ouvrages spécifiques</li>
+          <li>Éléments d’assemblage et de jonction</li>
         </ul>
 
-        <h2 className="prefab-subtitle">Avantages de nos ouvrages préfabriqués</h2>
-        <ul className="prefab-list">
-          <li><strong>Gain de temps :</strong> mise en œuvre rapide sur chantier</li>
-          <li><strong>Durabilité :</strong> matériaux résistants certifiés</li>
-          <li><strong>Sécurité :</strong> production contrôlée en usine</li>
-          <li><strong>Économie :</strong> réduction des coûts de coffrage et de main-d'œuvre</li>
-        </ul>
-
-        <h2 className="prefab-subtitle">Applications courantes</h2>
-        <p className="prefab-text">
-          Nos dalots et buses sont utilisés dans :
+        <h1 className="prefa-title">Fourniture et pose de bordures hautes</h1>
+        <p className="prefa-text">
+          Nous fournissons et posons différents types de bordures hautes pour assurer la délimitation
+          et la sécurité des voiries, trottoirs, espaces verts et zones de circulation.
         </p>
-        <ul className="prefab-list">
-          <li>Les routes nationales et rurales</li>
-          <li>Les aménagements hydrauliques et bassins de rétention</li>
-          <li>Les franchissements de fossés et petits ouvrages d’art</li>
+
+        <h2 className="prefa-subtitle">Applications :</h2>
+        <ul className="prefa-list">
+          <li>Voiries urbaines et interurbaines</li>
+          <li>Accotements, trottoirs et zones piétonnes</li>
+          <li>Accès privés et parkings</li>
         </ul>
 
-        <p className="prefab-contact" >
-          <Link  style={{textDecoration:"none"}}  to='/demandedevis'>📞 Besoin d’un devis ou d’un conseil technique ? <strong>Contactez-nous</strong> dès maintenant !</Link>
-        </p>
-      </div>
+        <h2 className="prefa-subtitle">Avantages :</h2>
+        <ul className="prefa-list">
+          <li>Résistance aux charges lourdes et aux intempéries</li>
+          <li>Installation rapide et propre</li>
+          <li>Esthétique soignée pour l’aménagement urbain</li>
+        </ul>
+
+         <div className="glissieres-contact">
+                 <Link style={{textDecoration:'none'}} to="/demandedevis">📞 Pour un devis ou une étude personnalisée, <strong>contactez-nous</strong> dès aujourd’hui !</Link>
+                 </div>
+              </div>
     </section>
   );
 };

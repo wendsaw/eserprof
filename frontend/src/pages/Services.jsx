@@ -50,10 +50,10 @@ function Services() {
               </article>
               <article>
                 <article>
-                <Link to="/ouvrage" className="service-link">
+                <Link to="/prefa" className="service-link">
                   <div className="img-box img-service5"></div>
-                  <h3>Préfabrication d'ouvrage en béton armé (dalots et buses)</h3>
-                  <p>Routes nationales et rurales</p>
+                  <h3>Préfabrication d'ouvrage en béton armé (dalots,buses) Fourniture et pose de tout type de bordures hautes</h3>
+                  <p>Routes nationales et rurales délimiter les chaussées</p>
                 </Link>
                 </article>
               </article>
@@ -61,8 +61,8 @@ function Services() {
                 <article>
                 <Link to="/bordure" className="service-link">
                   <div className="img-box img-service6"></div>
-                  <h3>Fourniture et pose de tout type de bordures hautes</h3>
-                  <p>délimiter les chaussées</p>
+                  <h3>Infrastructures Ferroviaire</h3>
+                  <p>Construction de voies ferrées (voie unique/double, voies industrielles)</p>
                 </Link>
                 </article>
               </article>

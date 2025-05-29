@@ -6,41 +6,35 @@ Link
 
 const Bordure = () => {
   return (
-    <section className="bordures-container">
-      <div className="bordures-content">
-        <h1 className="bordures-title">Fourniture et Pose de Bordures Hautes</h1>
-        <p className="bordures-intro">
-          Chez <strong>ESER-PROF</strong>, nous assurons la <strong>fourniture</strong> et la <strong>pose professionnelle</strong> de tout type de bordures hautes pour
-          la délimitation des chaussées, trottoirs, accotements et espaces publics.
+    <section className="railway-container">
+      <div className="railway-wrapper">
+        <h1 className="railway-title">Infrastructures Ferroviaires</h1>
+        <p className="railway-text">
+          ESER-PROF s’investit dans le développement des infrastructures ferroviaires en offrant
+          des solutions techniques modernes, fiables et durables pour améliorer les réseaux de transport
+          ferroviaire au Burkina Faso et dans la sous-région.
         </p>
 
-        <h2 className="bordures-subtitle">Types de bordures proposées</h2>
-        <ul className="bordures-list">
-          <li>Bordures T2, T3 et T4 en béton</li>
-          <li>Bordures granitées pour les zones urbaines</li>
-          <li>Bordures de caniveaux (avec ou sans grille)</li>
-          <li>Bordures décoratives pour parcs et jardins</li>
+        <h2 className="railway-subtitle">Nos services comprennent :</h2>
+        <ul className="railway-list">
+          <li>Construction de voies ferrées (rails, traverses, ballast)</li>
+          <li>Aménagement de gares et haltes ferroviaires</li>
+          <li>Entretien et rénovation de tronçons existants</li>
+          <li>Pose de systèmes de signalisation ferroviaire</li>
+          <li>Drainage, ouvrages d’art et terrassements associés</li>
         </ul>
 
-        <h2 className="bordures-subtitle">Nos garanties</h2>
-        <ul className="bordures-list">
-          <li><strong>Matériaux de qualité :</strong> conformité aux normes DTU et ISO</li>
-          <li><strong>Pose précise :</strong> respect des alignements et niveaux</li>
-          <li><strong>Durabilité :</strong> excellente tenue dans le temps et aux intempéries</li>
-          <li><strong>Service complet :</strong> du terrassement à la finition</li>
+        <h2 className="railway-subtitle">Nos engagements :</h2>
+        <ul className="railway-list">
+          <li>Respect des normes UIC et qualité des matériaux</li>
+          <li>Respect des délais et coordination optimale</li>
+          <li>Intégration durable avec les milieux traversés</li>
+          <li>Sécurité des travailleurs et des usagers</li>
         </ul>
 
-        <h2 className="bordures-subtitle">Applications courantes</h2>
-        <ul className="bordures-list">
-          <li>Voiries urbaines et rurales</li>
-          <li>Aménagements paysagers</li>
-          <li>Zones industrielles ou résidentielles</li>
-          <li>Aires de stationnement</li>
-        </ul>
-
-        <p className="bordures-contact">
-          <Link style={{textDecoration:'none'}} to={'/demandedevis'}>📞 Besoin d’un devis personnalisé ? <strong>Contactez-nous</strong> pour un accompagnement rapide et efficace !</Link>
-        </p>
+        <div className="glissieres-contact">
+                <Link style={{textDecoration:'none'}} to="/demandedevis">📞 Pour un devis ou une étude personnalisée, <strong>contactez-nous</strong> dès aujourd’hui !</Link>
+                </div>
       </div>
     </section>
   );

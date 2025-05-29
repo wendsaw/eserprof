@@ -3,12 +3,12 @@ import './presentation.css';
 
 const Presentation = () => {
   const equipe = [
-    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général',email: 'mikiemaabdoul@eserprof.com'  },
-    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique',email: 'mikiemaabdoul@eserprof.com'  },
-    { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics',email: 'mikiemaabdoul@eserprof.com'  },
-    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité',email: 'mikiemaabdoul@eserprof.com' },
-    { name: 'TIENDREBEOGO Stéphane Kamal', role: ' technicien supérieur de génie civil',email: 'mikiemaabdoul@eserprof.com' },
-    { name: 'Sophie Yaméogo', role: 'Assistante administrative' ,email: 'mikiemaabdoul@eserprof.com'},
+    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général', email: 'mikiemaabdoul@eserprof.com', photo: 'photoPdg.jpg' },
+    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique', email: 'mikiemaabdoul@eserprof.com', photo: 'photoGuete.png' },
+    { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics', email: 'mikiemaabdoul@eserprof.com', photo: 'andre.png' },
+    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité', email: 'mikiemaabdoul@eserprof.com', photo: 'esther.jpg' },
+    { name: 'TIENDREBEOGO Stéphane Kamal', role: 'Technicien supérieur de génie civil', email: 'mikiemaabdoul@eserprof.com', photo: 'stephane.png' },
+   
   ];
 
   return (
@@ -55,13 +55,13 @@ const Presentation = () => {
           {equipe.map((member, index) => (
             <div key={index} className="team-card">
               <img
-                src={`https://via.placeholder.com/150?text=${member.name.split(' ')[0]}`}
+                src={`/images/${member.photo}`} // ✅ Directly from public/images/
                 alt={member.name}
                 className="team-avatar"
               />
               <h3 className="team-name">{member.name}</h3>
               <p className="team-role">{member.role}</p>
-               <p className="team-role">{member.email}</p>
+              <p className="team-email">{member.email}</p>
             </div>
           ))}
         </div>

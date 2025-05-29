@@ -1,71 +1,39 @@
 import React from 'react';
+import './MarquageSol.css';
 import { Link } from 'react-router-dom';
 
-
-
-import './marquageSol.css'; // Assure-toi que ce fichier contient les styles globaux
-
-function MarquageSol() {
+const MarquageSol = () => {
   return (
-    <main className="page marquage-page">
-      <h2 className="section-title">Marquage au sol et entretien de la signalisation horizontale</h2>
+    <section className="marquage-container">
+      <div className="marquage-wrapper">
+        <h1 className="marquage-title">Marquage au sol et entretien de la signalisation horizontale</h1>
 
-      <section className="section-content">
-        <p>
-          Nous réalisons tous types de marquages horizontaux afin de garantir une circulation sécurisée,
-          fluide et conforme aux normes en vigueur. Nos services s'adressent aux collectivités, aux
-          entreprises et aux particuliers souhaitant structurer efficacement leurs espaces routiers ou privés.
+        <p className="marquage-text">
+          Notre société intervient pour réaliser tout type de marquage au sol afin d'assurer la sécurité des usagers, la lisibilité des voies et le bon fonctionnement de la circulation routière. Nous accompagnons aussi bien les collectivités que les entreprises et infrastructures privées.
         </p>
 
-        <h3>Prestations proposées :</h3>
-        <ul>
-          <li>Lignes de chaussée (continues et discontinues)</li>
+        <h2 className="marquage-subtitle">Nos prestations incluent :</h2>
+        <ul className="marquage-list">
+          <li>Lignes de chaussée (continues / discontinues)</li>
           <li>Passages piétons</li>
-          <li>Flèches directionnelles</li>
-          <li>Symboles (STOP, cédé le passage, PMR, vélo…)</li>
-          <li>Bandes de ralentissement et zébrures de sécurité</li>
-          <li>Numérotation ou lettrage au sol</li>
+          <li>Flèches directionnelles et symboles routiers</li>
+          <li>Signalisations PMR, STOP, CÉDEZ LE PASSAGE, ZÉBRURES</li>
+          <li>Bandes de ralentissement, lettrages et numérotations</li>
         </ul>
 
-        <h3>Produits & matériaux utilisés :</h3>
-        <ul>
-          <li>Peintures routières : thermoplastiques ou acryliques</li>
+        <h2 className="marquage-subtitle">Produits & matériaux utilisés :</h2>
+        <ul className="marquage-list">
+          <li>Peintures thermoplastiques et acryliques</li>
           <li>Microbilles de verre pour la visibilité nocturne</li>
-          <li>Peintures à séchage rapide et haute durabilité</li>
-          <li>Solutions écologiques disponibles</li>
+          <li>Peintures à séchage rapide, durables et écologiques</li>
         </ul>
 
-        <h3>Méthodologie :</h3>
-        <ol>
-          <li>Analyse des besoins et état du sol</li>
-          <li>Préparation et nettoyage de la surface</li>
-          <li>Application du marquage avec matériel professionnel</li>
-          <li>Contrôle qualité et conformité</li>
-          <li>Entretien ou remise en peinture selon fréquence définie</li>
-        </ol>
-
-        <h3>Public concerné :</h3>
-        <ul>
-          <li>Collectivités territoriales et services publics</li>
-          <li>Entreprises, usines, zones industrielles</li>
-          <li>Centres commerciaux et parkings privés</li>
-          <li>Hôpitaux, établissements scolaires</li>
-        </ul>
-
-        <div className="cta-contact">
-         <div style={{ textAlign: 'center' }}>
-            <Link to="/demandedevis" className="btn-primary">Demander un devis</Link>
-          </div>
-          <br />
-          <p>
-            📞 Téléphone : <strong>+226 12 34 56 78</strong><br />
-            💬 <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a><br />
-            📧 Email : <strong>info@eserprof.com</strong>
-          </p>
-        </div>
-      </section>
-    </main>
+        <div className="glissieres-contact">
+                        <Link style={{textDecoration:'none'}} to="/demandedevis">📞 Pour un devis ou une étude personnalisée, <strong>contactez-nous</strong> dès aujourd’hui !</Link>
+                        </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default MarquageSol;
