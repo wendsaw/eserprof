@@ -1,5 +1,5 @@
 import React from 'react';
-import './Tracage.css';
+import './tracage.css';
 import { Link } from 'react-router-dom';
 
 const Tracage = () => {
