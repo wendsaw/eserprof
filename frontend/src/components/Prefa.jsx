@@ -1,5 +1,5 @@
 import React from 'react';
-import './Prefa.css';
+import './prefa.css';
 import { Link } from 'react-router-dom';
 
 const Prefa = () => {

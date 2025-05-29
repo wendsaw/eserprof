@@ -1,5 +1,5 @@
 import React from 'react';
-import './MarquageSol.css';
+import './marquageSol.css';
 import { Link } from 'react-router-dom';
 
 const MarquageSol = () => {
