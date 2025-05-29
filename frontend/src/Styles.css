@@ -3,7 +3,7 @@
 /* === HEADER NAVBAR === */
 header {
   background-color: #ffffff;
-  background-image: url('images/cleanPicture2.png'); /* Remplace avec le bon chemin de ton image */
+  background-image: url('/images/cleanPicture2.png'); /* Remplace avec le bon chemin de ton image */
   background-size: cover;
   background-position: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
