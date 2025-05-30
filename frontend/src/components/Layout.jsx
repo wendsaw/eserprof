@@ -50,7 +50,7 @@ function Layout() {
           </div>
          <div className="social-icons">
     <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer"><FaFacebookF /></a>
-    <a href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
+    <a href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
     <a href="https://wa.me/+22679090909" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
      
   </div>
@@ -115,7 +115,7 @@ function Layout() {
         <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
         <div className="social">
           <a style={{color:'white', textDecoration:'none'}} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
-          <a style={{color:'white', textDecoration:'none'}} href="https://tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
+          <a style={{color:'white', textDecoration:'none'}} href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
         </div>
       </footer>
     </>
