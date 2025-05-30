@@ -6,7 +6,7 @@ const Prefa = () => {
   return (
     <section className="prefa-container">
       <div className="prefa-wrapper">
-        <h1 className="prefa-title">Préfabrication d’ouvrages en béton armé (dalots, buses)</h1>
+        <h1 className="prefa-title">Préfabrication d’ouvrages en béton armé </h1>
         <p className="prefa-text">
           Nous fabriquons et posons des ouvrages préfabriqués en béton armé pour garantir la solidité
           et la durabilité des infrastructures routières et hydrauliques. Nos dalots et buses sont conçus

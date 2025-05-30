@@ -46,7 +46,7 @@ h2{
   color: #2c3e50;
   margin-bottom: 1rem;
   text-align: center;
-  font-family:fantasy;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
 }
 
@@ -202,9 +202,10 @@ h2{
   text-align: center;
 }
 
-.realisations h2 {
+.realisations  h3 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .gallery {

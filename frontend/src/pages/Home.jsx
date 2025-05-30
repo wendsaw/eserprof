@@ -16,8 +16,8 @@ function Home() {
             <Link style={{textDecoration:'none'}} to="/tracage"><li>Traçage de parking</li></Link>
             <Link style={{textDecoration:'none'}} to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
             <Link style={{textDecoration:'none'}} to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
-            <Link  style={{textDecoration:'none'}}> <li>Préfabrication d'ouvrage, fourniture et pose de tout type de bordures hautes</li></Link>
-            <Link style={{textDecoration:'none'}}> <li>Infrastructures Ferroviaire</li></Link>
+            <Link  style={{textDecoration:'none'}} to="/prefa"> <li>Préfabrication d'ouvrage, fourniture et pose de tout type de bordures hautes</li></Link>
+            <Link style={{textDecoration:'none'}} to="/bordure"> <li>Infrastructures Ferroviaire</li></Link>
             
           </ul>
 
@@ -118,17 +118,17 @@ function Home() {
         <h2 style={{fontFamily:"cursive"}}>Nos Réalisations</h2>
         <div className="gallery">
           <div className="realisation-block">
-            <Link style={{textDecoration:'none'}} to="/peageModerne"><h3 style={{fontFamily:"-moz-initial"}}>Poste de péage moderne</h3>
+            <Link style={{textDecoration:'none'}} to="/peageModerne"><h3 >Poste de péage moderne</h3>
               <img src="/realisations/peagesModerne/image1.png" alt="Péage moderne" /></Link>
           </div>
 
           <div className="realisation-block">
-            <Link style={{textDecoration:'none'}} to="/aeroport"><h3 style={{fontFamily:"-moz-initial"}}>Aéroport de Ouagadougou</h3>
+            <Link style={{textDecoration:'none'}} to="/aeroport"><h3 >Aéroport de Ouagadougou</h3>
               <img src="/realisations/aeroport/picture1.png" alt="Aéroport" /></Link>
           </div>
 
           <div className="realisation-block">
-            <Link style={{textDecoration:'none'}} to="/gourcy"><h3 style={{fontFamily:"-moz-initial"}}>Projet Gourcy</h3>
+            <Link style={{textDecoration:'none'}} to="/gourcy"><h3 >Projet Gourcy</h3>
               <img src="/realisations/gourcy/image1.png" alt="Gourcy" /></Link>
           </div>
         </div>

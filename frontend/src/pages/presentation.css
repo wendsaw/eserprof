@@ -23,6 +23,7 @@
   color: #0f3460;
   margin-bottom: 1rem;
   font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .presentation-text {
@@ -30,16 +31,18 @@
   line-height: 1.7;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: cursive;
 }
 
 /* ===== SECTIONS ===== */
 .section-title {
   font-size: 1.8rem;
   margin: 2rem 0 1rem;
-  border-left: 5px solid #2ecc71;
+  /* border-left: 5px solid #2ecc71; */
   padding-left: 1rem;
   color: #0f3460;
   font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* ===== LISTES ===== */
