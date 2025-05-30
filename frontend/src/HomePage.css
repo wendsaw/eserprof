@@ -327,3 +327,113 @@ form button:hover {
   font-weight: 500;
   text-align: center;
 }
+/* === MEDIA QUERIES POUR RESPONSIVENESS === */
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-list,
+  .gallery,
+  .partenaires .cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .services-list article {
+    min-height: 260px;
+    padding: 1rem;
+  }
+
+  .hero-list {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0.8rem;
+  }
+
+  .hero-list {
+    font-size: 1rem;
+  }
+
+  .services-list article {
+    min-height: 220px;
+  }
+
+  .gallery {
+    gap: 1rem;
+  }
+
+  .realisation-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    padding: 0 1rem;
+  }
+
+  .prefab-contact {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-list {
+    font-size: 0.95rem;
+  }
+
+  .services-list article {
+    padding: 0.8rem;
+    min-height: 200px;
+  }
+
+  .services-list h3 {
+    font-size: 1rem;
+  }
+
+  .services-list p {
+    font-size: 0.85rem;
+  }
+
+  .img-box {
+    height: 120px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.95rem;
+  }
+
+  form button {
+    font-size: 0.95rem;
+  }
+
+  .card-inner {
+    height: 130px;
+  }
+
+  .prefab-contact {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .contact-info {
+    font-size: 0.85rem;
+  }
+}
