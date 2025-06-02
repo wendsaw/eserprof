@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles.css';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
-import Realisations from '../pages/Realisations';
+import Realisations from '../pages/References';
 import Contact from '../pages/Contact';
 import Presentation from '../pages/Presentation';
 import MarquageSol from './MarquageSol';
@@ -20,7 +20,10 @@ import Gourcy from './Gourcy'
 import DemandeDevis from './demandeDevis';
 import Prefa from './Prefa';
 import Bordure from './Bordure';
-
+import ProjetCiteAn2 from './ProjetCiteAn2';
+import ProjetZiniare from './ProjetZiniare';
+import Kosyam from './Kosyam';
+import Ccva from './Ccva';
 
 
 function Layout() {
@@ -39,30 +42,30 @@ function Layout() {
 
   return (
     <>
-    
 
-    
+
+
       <header>
         {/* Top: logo + nav */}
         <div className="header-top">
           <div className="logo">
             <img src="/images/logo-eserprof.png" alt="Logo ESER-PROF" />
           </div>
-         <div className="social-icons">
-    <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer"><FaFacebookF /></a>
-    <a href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
-    <a href="https://wa.me/+22679090909" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
-     
-  </div>
+          <div className="social-icons">
+            <a href="https://facebook.com/eserprof" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+            <a href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer"><FaTiktok /></a>
+            <a href="https://wa.me/+22679090909" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+
+          </div>
 
           <nav>
             <ul>
               <li><Link to="/">Accueil</Link></li>
-               <li><Link to="/presentation">Presentation</Link></li>
+              <li><Link to="/presentation">Presentation</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/realisations">Réalisations</Link></li>
+              <li><Link to="/realisations">Réferences Technique</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-             
+
             </ul>
           </nav>
         </div>
@@ -87,7 +90,7 @@ function Layout() {
             rel="noreferrer"
             style={{ textDecoration: "none", color: "inherit", marginLeft: "10px" }}
           >
-            📞 Besoin d’un devis ou d’un conseil technique ? <strong>Contactez-nous</strong> dès maintenant : +22679090909 +22675418703 
+            📞 Besoin d’un devis ou d’un conseil technique ? <strong>Contactez-nous</strong> dès maintenant : +22679090909 +22675418703
           </a>
         </p>
       </div>
@@ -105,17 +108,21 @@ function Layout() {
         <Route path="/peageModerne" element={<PeageModerne />} />
         <Route path="/aeroport" element={<Aeroport />} />
         <Route path="/gourcy" element={<Gourcy />} />
-        <Route path="/demandedevis" element={<DemandeDevis/>} />
-        <Route path="/prefa" element={<Prefa/>} />
-        <Route path="/bordure" element={<Bordure/>}/>
-        
+        <Route path="/demandedevis" element={<DemandeDevis />} />
+        <Route path="/prefa" element={<Prefa />} />
+        <Route path="/bordure" element={<Bordure />} />
+        <Route path="/citean2" element={<ProjetCiteAn2 />} />
+        <Route path="/ziniare" element={<ProjetZiniare />} />
+        <Route path="/kosyam" element={<Kosyam />} />
+        <Route path="/ccva" element={<Ccva />} />
+
       </Routes>
 
       <footer>
         <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
         <div className="social">
-          <a style={{color:'white', textDecoration:'none'}} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
-          <a style={{color:'white', textDecoration:'none'}} href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
+          <a style={{ color: 'white', textDecoration: 'none' }} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
+          <a style={{ color: 'white', textDecoration: 'none' }} href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
         </div>
       </footer>
     </>

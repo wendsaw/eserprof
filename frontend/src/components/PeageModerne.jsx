@@ -71,8 +71,26 @@ function PeageModerne() {
         <div>
           <img src="/realisations/peagesModerne/image3.jpg" alt="Péage moderne 3" style={{height:'400px'}} />
         </div>
+         <div>
+          <img src='/images/references1.png' alt="Péage moderne 1" style={{height:'400px'}} />
+        </div>
+        <div>
+          <img src='/images/references2.png'alt="Péage moderne 1" style={{height:'400px'}} />
+        </div>
+        <div>
+          <img src='/images/references3.png' alt="Péage moderne 1" style={{height:'400px'}} />
+        </div>
       </Slider>
+      <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+      Travaux de Construction de postes de péages routiers modernes  (Ouagadougou & Bobo)
+    </h3>
+    <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+      Client: Globex Construction</p>
+    <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+      Date: 2023
+    </p>
     </div>
+
   );
 }
 

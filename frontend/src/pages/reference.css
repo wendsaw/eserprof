@@ -1,0 +1,130 @@
+/* === RÉferences*/
+.references h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.references-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.references-list article {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  background: #2980b9;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #1f1f1f;
+}
+
+.references-list article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.references-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.references-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.references-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.references-list p {
+  font-size: 0.95rem;
+  color:white;
+  font-weight: normal;
+}
+.img-box {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Example classes for each image background */
+.img-references1 {
+  background-image: url('/images/references1.png');
+}
+
+.img-references2 {
+  background-image: url('/images/references2.png');
+}
+
+.img-references3 {
+  background-image: url('/images/references3.png');
+}
+
+.img-references4 {
+  background-image: url('/images/references4.png');
+}
+.img-references5 {
+  background-image: url('/images/references5.png');
+}
+
+.img-references6 {
+  background-image: url('/images/references6.png');
+}
+
+.img-references7 {
+  background-image: url('/images/references6.png');
+}
+.img-references8 {
+  background-image: url('/images/references6.png');
+}
+.img-references9 {
+  background-image: url('/images/references9.png');
+}
+.img-references10 {
+  background-image: url('/images/references10.png');
+}
+.img-references11 {
+  background-image: url('/images/references11.png');
+}
+.img-references12 {
+  background-image: url('/images/references12.png');
+}
+.img-references13 {
+  background-image: url('/images/references13.png');
+}
+.img-references14 {
+  background-image: url('/images/references14.png');
+}
+.img-references15 {
+  background-image: url('/images/references15.png');
+}
+.img-references16 {
+  background-image: url('/images/references16.png');
+}
+.img-references17 {
+  background-image: url('/images/references17.png');
+}

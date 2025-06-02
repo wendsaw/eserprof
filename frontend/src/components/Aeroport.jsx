@@ -102,6 +102,14 @@ function PeageModerne() {
           <img src="/realisations/aeroport/image13.jpg" alt="Péage moderne 13" style={{height:'400px'}} />
         </div>
       </Slider>
+      <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                Travaux de rafraichissement de la peinture blanche de l'axe de la piste, des marques de  seuils de piste et des écriteaux de l'aéroport international de Ouagadougou (2023)
+            </h3>
+            <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                Client: ASECNA</p>
+            <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                Date: 2022
+            </p>
     </div>
   );
 }
