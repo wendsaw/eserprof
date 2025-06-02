@@ -127,6 +127,120 @@ function References() {
                  </Link>
                
                </article>
+                <article>
+                 <Link to="/voiriebobo" className="references-link">
+                   <div className="img-box img-references12"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX D’AMENAGEMENT ET DE BITUMAGE DE VOIRIES DANS LA VILLE DE BOBO(Avenue chalon en champagne)
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:SEGNA BTP</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2022
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/banfora" className="references-link">
+                   <div className="img-box img-references13"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX D’AMENAGEMENT ET DE BITUMAGE DE VOIRIES POUR LA COMMEMORATION DU 11 DECEMBRE 2020 A BANFORA LOT1
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:ALPHA SERVICE</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2021
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/rue30" className="references-link">
+                   <div className="img-box img-references14"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX D’AMENAGEMENT ET DE BITUMAGE DES RUES 30.161 ET 30.260 DANS LA COMMUNE DE OUAGADOUGOU
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:Globex Construction</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2020
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/pluvial" className="references-link">
+                   <div className="img-box img-references15"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                   TRAVAUX D'AMENAGEMENT, DE BITUMAGE ET D’ASSAINISSEMENT PLUVIAL DE VOIRIES DANS LA COMMUNE DE OUAGADOUGOU (LOT1)
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:GLOBEX CONSTUCTION</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2019
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/karpala" className="references-link">
+                   <div className="img-box img-references16"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX DE CONSTRUCTION ET DE BITUMAGE DE VOIRIES  DANS LA VILLE DE OUAGADOUGOU. Azimmo et Karpala(13 km)
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:Globex Construction</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2020
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/gourcy" className="references-link">
+                   <div className="img-box img-references17"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX DE REHABILITATIONDE LA ROUTE NATIONALE N°2 (RN02) : GOURCY-OUAHIGOUYA (LOT1)
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:Globex Construction</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2020
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/aeroport" className="references-link">
+                   <div className="img-box img-references6"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                    TRAVAUX DE BALISAGE DE PARKING A L'AEROPORT INTERNATIONAL DE OUAGADOUGOU
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:ASECNA</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2022
+                   </p>
+                 </Link>
+               
+               </article>
+                <article>
+                 <Link to="/tenko" className="references-link">
+                   <div className="img-box img-references12"></div>
+                   <h3 style={{ fontSize: '1.25rem', color: '#2c3e50', fontWeight: '600', margin: '1rem 0 0.5rem' }}>
+                   TRAVAUX D’AMENAGEMENT ET DE BITUMAGE DE VOIRIES POUR LA COMMEMORATION DU 11 DECEMBRE 2019  A TENKODOGO LOT1 et 4
+                   </h3>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Client:ALPHA SERVICE</p>
+                   <p style={{ fontSize: '1rem', color: '#555', margin: '0.25rem 0' }}>
+                     Date: 2023
+                   </p>
+                 </Link>
+               
+               </article>
+                
+               
      
              </div>
            </section>

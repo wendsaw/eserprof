@@ -29,7 +29,12 @@ import ProjetZiniare from './ProjetZiniare';
 import Kosyam from './Kosyam';
 import Ccva from './Ccva';
 import ScrollToTop from './ScrollToTop';
-
+import VoirieBobo from './VoirieBobo';
+import Banfora from './Banfora';
+import Rue30 from './Rue30'
+import Pluvial from './Pluvial';
+import Karpala from './Karpala';
+import Tenko from './Tenko';
 
 function Layout() {
   const location = useLocation();
@@ -122,6 +127,14 @@ function Layout() {
           <Route path="/ziniare" element={<ProjetZiniare />} />
           <Route path="/kosyam" element={<Kosyam />} />
           <Route path="/ccva" element={<Ccva />} />
+          <Route path="/voiriebobo" element={<VoirieBobo />} />
+          <Route path="/banfora" element={<Banfora />} />
+          <Route path="/rue30" element={<Rue30 />} />
+           <Route path="/pluvial" element={<Pluvial />} />
+           <Route path="/karpala" element={<Karpala />} />
+            <Route path="/tenko" element={<Tenko />} />
+
+
 
         </Routes>
       
