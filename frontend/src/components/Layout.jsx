@@ -28,6 +28,7 @@ import ProjetCiteAn2 from './ProjetCiteAn2';
 import ProjetZiniare from './ProjetZiniare';
 import Kosyam from './Kosyam';
 import Ccva from './Ccva';
+import ScrollToTop from './ScrollToTop';
 
 
 function Layout() {
@@ -98,32 +99,32 @@ function Layout() {
           </a>
         </p>
       </div>
+      <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/references" element={<References />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/presentation" element={<Presentation />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/references" element={<References />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/presentation" element={<Presentation />} />
 
+          <Route path="/marquageSol" element={<MarquageSol />} />
+          <Route path="/tracage" element={<Tracage />} />
+          <Route path="/signalisation" element={<Signalisation />} />
+          <Route path="/glissiere" element={<Glissiere />} />
+          <Route path="/peageModerne" element={<PeageModerne />} />
+          <Route path="/aeroport" element={<Aeroport />} />
+          <Route path="/gourcy" element={<Gourcy />} />
+          <Route path="/demandedevis" element={<DemandeDevis />} />
+          <Route path="/prefa" element={<Prefa />} />
+          <Route path="/bordure" element={<Bordure />} />
+          <Route path="/citean2" element={<ProjetCiteAn2 />} />
+          <Route path="/ziniare" element={<ProjetZiniare />} />
+          <Route path="/kosyam" element={<Kosyam />} />
+          <Route path="/ccva" element={<Ccva />} />
 
-        <Route path="/marquageSol" element={<MarquageSol />} />
-        <Route path="/tracage" element={<Tracage />} />
-        <Route path="/signalisation" element={<Signalisation />} />
-        <Route path="/glissiere" element={<Glissiere />} />
-        <Route path="/peageModerne" element={<PeageModerne />} />
-        <Route path="/aeroport" element={<Aeroport />} />
-        <Route path="/gourcy" element={<Gourcy />} />
-        <Route path="/demandedevis" element={<DemandeDevis />} />
-        <Route path="/prefa" element={<Prefa />} />
-        <Route path="/bordure" element={<Bordure />} />
-        <Route path="/citean2" element={<ProjetCiteAn2 />} />
-        <Route path="/ziniare" element={<ProjetZiniare />} />
-        <Route path="/kosyam" element={<Kosyam />} />
-        <Route path="/ccva" element={<Ccva />} />
-
-      </Routes>
-
+        </Routes>
+      
       <footer>
         <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
         <div className="social">
