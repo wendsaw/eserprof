@@ -248,7 +248,7 @@ function Home() {
             <div className="card-inner">
               <div className="card-front">
                 <p style={{fontFamily:"fantasy"}}>“Globex Construction”</p>
-                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Technique</span>
               </div>
               <div className="card-back">
                 <p style={{fontFamily:"fantasy"}}>“SOROUBAT”</p>
@@ -261,7 +261,7 @@ function Home() {
             <div className="card-inner">
               <div className="card-front">
                 <p style={{fontFamily:"fantasy"}}>“Présidence du Faso”</p>
-                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Technique</span>
               </div>
               <div className="card-back">
                 <p style={{fontFamily:"fantasy"}}>“CMC Italie”</p>
@@ -273,7 +273,7 @@ function Home() {
             <div className="card-inner">
               <div className="card-front">
                 <p style={{fontFamily:"fantasy"}}>“CODEC”</p>
-                <span style={{fontFamily:"-moz-initial"}}>Partenaire Commercial</span>
+                <span style={{fontFamily:"-moz-initial"}}>Partenaire Technique</span>
               </div>
               <div className="card-back">
                 <p style={{fontFamily:"fantasy"}}>“Coris Banque”</p>
