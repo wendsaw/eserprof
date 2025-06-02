@@ -5,11 +5,15 @@ import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'; // 👈 Impo
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles.css';
+
+// pages
 import Home from '../pages/Home';
 import Services from '../pages/Services';
-import Realisations from '../pages/References';
+import References from '../pages/References';
 import Contact from '../pages/Contact';
 import Presentation from '../pages/Presentation';
+
+// components
 import MarquageSol from './MarquageSol';
 import Tracage from './Tracage';
 import Signalisation from './Signalisation';
@@ -63,7 +67,7 @@ function Layout() {
               <li><Link to="/">Accueil</Link></li>
               <li><Link to="/presentation">Presentation</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/realisations">Réferences Technique</Link></li>
+              <li><Link to="/references">Réferences Technique</Link></li>
               <li><Link to="/contact">Contact</Link></li>
 
             </ul>
@@ -98,9 +102,11 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/realisations" element={<Realisations />} />
+        <Route path="/references" element={<References />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/presentation" element={<Presentation />} />
+
+
         <Route path="/marquageSol" element={<MarquageSol />} />
         <Route path="/tracage" element={<Tracage />} />
         <Route path="/signalisation" element={<Signalisation />} />
