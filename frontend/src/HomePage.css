@@ -83,31 +83,26 @@ h2{
 
 .background-transition {
   width: 95vw;
-  height: 150vh; /* ou fixe comme 400px si tu préfères */
-  background-image: url('/images/cleanPicture1.png'); /* assure-toi du bon chemin */
+  height: 150vh; /* valeur par défaut desktop */
+  background-image: url('/images/cleanPicture1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0; /* supprime les marges verticales */
+  margin: 0;
   padding: 0;
 }
-.hero {
-  background: linear-gradient(to right, rgba(52,152,219,0.85), rgba(46,204,113,0.85)); /* ✅ assombrit légèrement */
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  text-align: center;
-}
+
+/* TABLETTES */
 @media (max-width: 768px) {
-  .hero-list {
-    font-size: 1.1rem;
+  .background-transition {
+    height: 80vh; /* réduit la hauteur */
   }
 }
 
+/* MOBILES */
 @media (max-width: 480px) {
-  .hero-list {
-    font-size: 1rem;
+  .background-transition {
+    height: 60vh; /* encore plus compact */
   }
 }
 

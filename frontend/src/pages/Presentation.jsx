@@ -3,11 +3,11 @@ import './presentation.css';
 
 const Presentation = () => {
   const equipe = [
-    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général', role2:'Ingenieur Genie Civil',email: 'Nikiemaabdoul@eserprof.com', photo: 'photoPdg.png' },
-    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique', email: 'Gueteroland@eserprof.com', photo: 'photoGuete.png' },
+    { name: 'NIKIEMA Abdoul Aziz', role: 'Directeur Général', role2:'Ingenieur Genie Civil',email: 'Nikiemaabdoul@eserprof.com', photo: 'pdg.jpg' },
+    { name: 'GUETE Arzouma Roland', role: 'Directeur Technique', email: 'Gueteroland@eserprof.com', photo: 'photoGuete.jpg' },
     { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics', email: 'Youmaandre@eserprof.com', photo: 'andre.png' },
-    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité', email: 'Nikiemaesther@eserprof.com', photo: 'esther.png' },
-    { name: 'TIENDREBEOGO Stéphane Kamal', role: 'Technicien supérieur de génie civil', email: 'Info@eserprof.com', photo: 'stephane.png' },
+    { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité', email: 'Nikiemaesther@eserprof.com', photo: 'esther.jpg' },
+    { name: 'TIENDREBEOGO Stéphane Kamal', role: 'Technicien supérieur de génie civil', email: 'Info@eserprof.com', photo: 'stephane.jpg' },
    
   ];
 
