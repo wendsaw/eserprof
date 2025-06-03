@@ -21,7 +21,7 @@ h2{
  
   font-weight: 600;
   font-size: 2rem;
-  color: #2c3e50;
+  color: #fff;
   margin-bottom: 1rem;
   text-align: center;
  
@@ -43,7 +43,7 @@ h2{
   margin: 1rem 0;
   font-weight: 50;
   font-size: 1.5rem;
-  color: #2c3e50;
+  color:#fff;;
   margin-bottom: 1rem;
   text-align: center;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -51,7 +51,7 @@ h2{
 }
 
 .hero-list li {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #fff;
   margin: 0.1rem 0;
   padding: 0.1rem 1rem;
   border-radius: 8px;
