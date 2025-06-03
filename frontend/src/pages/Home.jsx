@@ -299,7 +299,7 @@ function Home() {
 
       {/* Section Contact */}
       <section >
-        <h2 style={{fontFamily:"cursive"}}>Contactez-Nous</h2>
+        <h2 style={{fontFamily:"cursive", color:'black'}}>Contactez-Nous</h2>
         <form>
           <input type="text" placeholder="Nom" required />
           <input type="email" placeholder="E-mail" required />

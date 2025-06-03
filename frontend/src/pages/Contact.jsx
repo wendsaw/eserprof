@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <main className="page">
-      <h2 style={{ textAlign: 'center' }}>Contactez-Nous</h2>
+      <h2 style={{ textAlign: 'center', color:'black' }}>Contactez-Nous</h2>
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <input type="text" name="nom" placeholder="Nom" value={formData.nom} onChange={handleChange} required />

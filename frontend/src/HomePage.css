@@ -83,7 +83,7 @@ h2{
 
 .background-transition {
   width: 95vw;
-  height: 150vh; /* valeur par défaut desktop */
+  height: 132vh; /* valeur par défaut desktop */
   background-image: url('/images/cleanPicture1.png');
   background-size: cover;
   background-position: center;
