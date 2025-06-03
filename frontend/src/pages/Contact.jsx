@@ -45,7 +45,7 @@ function Contact() {
       {status && <p style={{ marginTop: '1rem', textAlign: 'center', color: status.startsWith('✅') ? 'green' : 'red' }}>{status}</p>}
 
       <div className="contact-info" style={{ marginTop: '2rem' }}>
-        <p><strong>Téléphone:</strong> +226 12 34 56 78</p>
+        <p><strong>Téléphone:</strong>+22679090909/+22675418703</p>
         <p><strong>Email:</strong> info@eserprof.bf</p>
         <p><strong>Adresse:</strong> Ouagadougou, Burkina Faso</p>
         <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a>
