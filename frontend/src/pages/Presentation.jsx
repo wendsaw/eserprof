@@ -8,6 +8,7 @@ const Presentation = () => {
     { name: 'YOUMA Abdou André', role: 'Ingénieur Travaux publics', email: 'Youmaandre@eserprof.com', photo: 'andre.png' },
     { name: 'Mme NIKIEMA/Kabore Esther', role: 'Responsable Financière et Comptabilité', email: 'Nikiemaesther@eserprof.com', photo: 'esther.jpg' },
     { name: 'TIENDREBEOGO Stéphane Kamal', role: 'Technicien supérieur de génie civil', email: 'Info@eserprof.com', photo: 'stephane.jpg' },
+   { name: 'Frédéric KAM', role: 'conducteur spécialiste de machines Airless', email: 'Info@eserprof.com', photo: 'frederic.jpg' },
    
   ];
 
