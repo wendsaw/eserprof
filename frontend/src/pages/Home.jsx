@@ -12,7 +12,7 @@ function Home() {
 
 
           <ul className="hero-list" >
-            <Link style={{textDecoration:'none', color:'black'}} to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
+            <Link style={{textDecoration:'none'}} to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
             <Link style={{textDecoration:'none'}} to="/tracage"><li>Traçage de parking</li></Link>
             <Link style={{textDecoration:'none'}} to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
             <Link style={{textDecoration:'none'}} to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
