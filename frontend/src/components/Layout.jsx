@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'; // 👈 Import the icons
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles.css';
 
@@ -69,14 +70,49 @@ function Layout() {
           </div>
 
           <nav>
-            <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/presentation">Presentation</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/references">Réferences Technique</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-
-            </ul>
+            
+           <ul>
+    <li>
+      <Link
+        to="/"
+        className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
+      >
+        Accueil
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/presentation"
+        className={location.pathname === '/presentation' ? 'nav-link active' : 'nav-link'}
+      >
+        Presentation
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/services"
+        className={location.pathname === '/services' ? 'nav-link active' : 'nav-link'}
+      >
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/references"
+        className={location.pathname === '/references' ? 'nav-link active' : 'nav-link'}
+      >
+        Références Technique
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/contact"
+        className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'}
+      >
+        Contact
+      </Link>
+    </li>
+  </ul>
           </nav>
         </div>
 
