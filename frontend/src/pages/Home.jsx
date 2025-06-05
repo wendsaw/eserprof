@@ -12,12 +12,12 @@ function Home() {
 
 
           <ul className="hero-list" >
-            <Link style={{textDecoration:'none', color:' #fff'}} to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
-            <Link style={{textDecoration:'none', color:' #fff'}} to="/tracage"><li>Traçage de parking</li></Link>
-            <Link style={{textDecoration:'none', color:' #fff'}} to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
-            <Link style={{textDecoration:'none', color:' #fff'}} to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
-            <Link  style={{textDecoration:'none', color:' #fff'}} to="/prefa"> <li>Préfabrication d'ouvrage, fourniture et pose de tout type de bordures hautes</li></Link>
-            <Link style={{textDecoration:'none', color:' #fff'}} to="/bordure"> <li>Infrastructures Ferroviaire</li></Link>
+            <Link style={{textDecoration:'none'}} to="/marquageSol"><li>Marquage et entretien de la signalisation au sol</li></Link>
+            <Link style={{textDecoration:'none'}} to="/tracage"><li>Traçage de parking</li></Link>
+            <Link style={{textDecoration:'none'}} to="/signalisation"><li>Fourniture et pose de panneaux de signalisation</li></Link>
+            <Link style={{textDecoration:'none'}} to="/glissiere"><li>Fourniture et pose de glissière et garde-corps de sécurité</li></Link>
+            <Link  style={{textDecoration:'none'}} to="/prefa"> <li>Préfabrication d'ouvrage, fourniture et pose de tout type de bordures hautes</li></Link>
+            <Link style={{textDecoration:'none'}} to="/bordure"> <li>Infrastructures Ferroviaire</li></Link>
             
           </ul>
 
