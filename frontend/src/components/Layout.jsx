@@ -167,7 +167,7 @@ function Layout() {
           <Route path="/rue30" element={<Rue30 />} />
            <Route path="/pluvial" element={<Pluvial />} />
            <Route path="/karpala" element={<Karpala />} />
-            <Route path="/tenko" element={<Tenko />} />
+          <Route path="/tenko" element={<Tenko />} />
 
 
 
