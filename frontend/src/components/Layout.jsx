@@ -148,7 +148,6 @@ function Layout() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/presentation" element={<Presentation />} />
 
-
           <Route path="/marquageSol" element={<MarquageSol />} />
           <Route path="/tracage" element={<Tracage />} />
           <Route path="/signalisation" element={<Signalisation />} />
@@ -175,7 +174,7 @@ function Layout() {
         </Routes>
       
       <footer>
-        <p>&copy; 2025 ESER-PROF | Réalisé par <strong>BIWI</strong></p>
+        <p>&copy; 2025 ESER-PROF | Réalisé par <Link to="https://www.biwi.pro/"><strong>BIWI</strong></Link></p>
         <div className="social">
           <a style={{ color: 'white', textDecoration: 'none' }} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
           <a style={{ color: 'white', textDecoration: 'none' }} href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
