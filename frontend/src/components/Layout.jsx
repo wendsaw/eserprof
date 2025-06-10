@@ -174,7 +174,7 @@ function Layout() {
         </Routes>
       
       <footer>
-        <p>&copy; 2025 ESER-PROF | Réalisé par <Link to="https://www.biwi.pro/" style={{ color: 'white', textDecoration: 'none' }}><strong>BIWI</strong></Link></p>
+        <p>&copy; 2025 ESER-PROF | Réalisé par  <a style={{ color: 'white', textDecoration: 'none' }} href="https://www.biwi.pro/" target="_blank" rel="noreferrer">BIWI </a></p>
         <div className="social">
           <a style={{ color: 'white', textDecoration: 'none' }} href="https://facebook.com/eserprof" target="_blank" rel="noreferrer">Facebook </a>
           <a style={{ color: 'white', textDecoration: 'none' }} href="https://www.tiktok.com/@eserprof" target="_blank" rel="noreferrer">TikTok</a>
