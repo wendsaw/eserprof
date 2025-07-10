@@ -48,7 +48,7 @@ function Contact() {
         <p><strong>Téléphone:</strong>+22679090909/+22675418703</p>
         <p><strong>Email:</strong> info@eserprof.com</p>
         <p><strong>Adresse:</strong> Ouagadougou, Burkina Faso</p>
-        <a href="https://wa.me/22612345678" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a>
+        <a href="https://wa.me/22679090909" target="_blank" rel="noreferrer">Contacter sur WhatsApp</a>
       </div>
     </main>
   );
