@@ -8,7 +8,11 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://www.eserprof.com', 'http://localhost:5173'], // ← ajoute le frontend en local si tu testes
+  methods: ['POST'],
+}));
+
 app.use(express.json());
 
 // ✅ Route unique de contact
