@@ -26,6 +26,8 @@ function Contact() {
       setFormData({ nom: '', email: '', telephone: '', message: '' });
     } catch (err) {
       setStatus('❌ Erreur lors de l’envoi du message.');
+      console.log('error d envoie');
+      
     }
   };
 

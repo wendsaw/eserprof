@@ -25,7 +25,7 @@ const DemandeDevis = () => {
     setIsSubmitting(true);
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData);
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/devis`, formData);
 
       setStatus('✅ Votre demande a été envoyée avec succès.');
       setFormData({
